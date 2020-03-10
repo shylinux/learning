@@ -1,50 +1,48 @@
 premenu
 
-brief ""
+title "hello world"
 
-spark ""
-
-title "项目开发"
-
-chapter "理论"
-section "系统架构"
-section "设计模式"
-section "算法分析"
-section "数据结构"
-
-chapter "概念"
-section "原型"
-section "框架"
-section "模块"
-spark "模块接口" `
-m.Detail()
-m.Option()
-m.Append()
-m.Result()
-
-m.Conf()
-m.Rich()
-m.Grow()
-m.Cmd()
-m.Log()
-`
-section "接口"
-spark "数据接口" `
-kit.Int()
-
-kit.Value()
-kit.Keys()
-
-kit.Data()
-kit.Dict()
-kit.List()
+label "实践" `
+mall team chat wiki code
+linux nginx golang redis mysql
+zsh tmux docker git vim
 `
 
-chapter "流程"
-section "需求"
-section "设计"
-section "编码"
-section "测试"
-section "发布"
+spark
+label "应用" `
+浏览器 服务器
+客户端 中间件
+开发板 数据库
+` 24 yellow blue
 
-endmenu
+label "理论" `
+数据结构 算法分析
+系统架构 设计模式
+编译原理 人工智能
+` 24 yellow black
+
+spark
+label "项目" `
+learning shylinux
+vocalnos icebergs
+contexts toolkits
+` 24 red black
+
+field "前端" `web.code.git.trend` args `[volcanos]`
+
+field "后端" `web.code.git.trend` args `[icebergs]`
+
+chapter "icebergs"
+
+section "创建项目"
+spark "源码创建" `curl -s https://shylinux.com/publish/template.sh | sh`
+spark "镜像创建" `curl -s https://shylinux.com/publish/ice.sh | sh`
+
+section "启动项目"
+spark "启动项目" `bin/ice.sh`
+
+order "" `
+启动参数
+环境变量
+配置文件
+`
