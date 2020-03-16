@@ -9,28 +9,33 @@ zsh tmux docker git vim
 `
 
 spark
+label "理论" `
+启动流程 请求响应 服务集群
+数据结构 系统架构 编译原理
+算法分析 设计模式 人工智能
+` 24 yellow black
+
+spark
 label "应用" `
-浏览器 服务器
-客户端 中间件
-开发板 数据库
+浏览器 服务器 编辑器
+开发板 虚拟机 命令行
 ` 24 yellow blue
 
-label "理论" `
-数据结构 算法分析
-系统架构 设计模式
-编译原理 人工智能
+spark
+label "引擎" `
+解析引擎 搜索引擎 计算引擎
+渲染引擎 推荐引擎 存储引擎
 ` 24 yellow black
 
 spark
 label "项目" `
-learning shylinux
-vocalnos icebergs
-contexts toolkits
+learning shylinux contexts
+vocalnos icebergs toolkits
 ` 24 red black
 
 field "前端" `web.code.git.trend` args `[volcanos]`
-
 field "后端" `web.code.git.trend` args `[icebergs]`
+field "终端" `web.code.git.trend` args `[toolkits]`
 
 chapter "icebergs"
 
@@ -41,8 +46,5 @@ spark "镜像创建" `curl -s https://shylinux.com/publish/ice.sh | sh`
 section "启动项目"
 spark "启动项目" `bin/ice.sh`
 
-order "" `
-启动参数
-环境变量
-配置文件
-`
+field "存储引擎" `web.favor`
+
