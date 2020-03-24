@@ -44,7 +44,10 @@ spark "源码创建" `curl -s https://shylinux.com/publish/template.sh | sh`
 spark "镜像创建" `curl -s https://shylinux.com/publish/ice.sh | sh`
 
 section "启动项目"
-spark "启动项目" `bin/ice.sh`
+spark "启动项目" `bin/ice.sh start space connect dev`
+
+section "启动项目"
+spark "启动项目" `bin/ice.sh start space connect dev`
 
 field "存储引擎" `web.favor`
 
