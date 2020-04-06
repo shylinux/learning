@@ -57,3 +57,7 @@ section "终端操作"
 
 field "存储引擎" `web.favor`
 
+chapter "volcanos"
+section "微信小程序"
+
+field "微信官网" favor args `[微信官网]`
