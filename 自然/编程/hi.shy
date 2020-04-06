@@ -3,7 +3,7 @@ premenu
 title "hello world"
 
 label "实践" `
-mall team chat wiki code
+code wiki chat team mall
 linux nginx golang redis mysql
 zsh tmux docker git vim
 `
@@ -39,15 +39,21 @@ field "终端" `web.code.git.trend` args `[toolkits]`
 
 chapter "icebergs"
 
-section "创建项目"
+section "创建仓库"
 spark "源码创建" `curl -s https://shylinux.com/publish/template.sh | sh`
+
+section "创建项目"
 spark "镜像创建" `curl -s https://shylinux.com/publish/ice.sh | sh`
 
-section "启动项目"
+section "启动服务"
+spark "启动项目" `bin/ice.sh start serve`
+
+section "启动任务"
 spark "启动项目" `bin/ice.sh start space connect dev`
 
-section "启动项目"
-spark "启动项目" `bin/ice.sh start space connect dev`
+section "网页操作"
+
+section "终端操作"
 
 field "存储引擎" `web.favor`
 
