@@ -17,25 +17,25 @@ label "理论" `
 
 spark
 label "应用" `
-浏览器 服务器 编辑器
-开发板 虚拟机 命令行
+编辑器 服务器 浏览器
+命令行 虚拟机 开发板
 ` 24 yellow blue
 
 spark
 label "引擎" `
-解析引擎 搜索引擎 计算引擎
-渲染引擎 推荐引擎 存储引擎
+存储引擎 推荐引擎 渲染引擎
+计算引擎 搜索引擎 解析引擎
 ` 24 yellow black
 
 spark
 label "项目" `
-learning shylinux contexts
-vocalnos icebergs toolkits
+contexts icebergs vocalnos
+toolkits shylinux learning
 ` 24 red black
 
 field "前端" `web.code.git.trend` args `[volcanos]`
 field "后端" `web.code.git.trend` args `[icebergs]`
-field "终端" `web.code.git.trend` args `[toolkits]`
+field "终端" `web.code.git.trend` args `[contexts]`
 
 chapter "icebergs"
 
