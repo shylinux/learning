@@ -10,8 +10,8 @@ zsh tmux docker git vim
 
 spark
 label "理论" `
-启动流程 请求响应 服务集群
-数据结构 系统架构 编译原理
+启动流程 请求响应 网络路由
+数据结构 系统架构 服务集群
 算法分析 设计模式 人工智能
 ` 24 yellow black
 
@@ -23,8 +23,8 @@ label "应用" `
 
 spark
 label "引擎" `
-存储引擎 推荐引擎 渲染引擎
-计算引擎 搜索引擎 解析引擎
+存储引擎 搜索引擎 渲染引擎
+计算引擎 推荐引擎 解析引擎
 ` 24 yellow black
 
 spark
@@ -37,27 +37,23 @@ field "前端" `web.code.git.trend` args `[volcanos]`
 field "后端" `web.code.git.trend` args `[icebergs]`
 field "终端" `web.code.git.trend` args `[contexts]`
 
-chapter "icebergs"
-
-section "创建仓库"
-spark "源码创建" `curl -s https://shylinux.com/publish/template.sh | sh`
+chapter "安装"
 
 section "创建项目"
-spark "镜像创建" `curl -s https://shylinux.com/publish/ice.sh | sh`
+spark "创建项目" `curl -s https://shylinux.com/publish/template.sh | sh`
+
+section "创建服务"
+spark "创建服务" `curl -s https://shylinux.com/publish/ice.sh | sh`
 
 section "启动服务"
-spark "启动项目" `bin/ice.sh start serve`
+spark "启动服务" `bin/ice.sh start serve`
 
 section "启动任务"
-spark "启动项目" `bin/ice.sh start space connect dev`
+spark "启动任务" `bin/ice.sh start space connect dev`
 
-section "网页操作"
+chapter "使用"
 
-section "终端操作"
+field "搜索引擎" `web.chat.search`
 
-field "存储引擎" `web.favor`
+field "推荐引擎" `web.chat.commend`
 
-chapter "volcanos"
-section "微信小程序"
-
-field "微信官网" favor args `[微信官网]`
