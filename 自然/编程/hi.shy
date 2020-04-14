@@ -33,9 +33,9 @@ contexts icebergs vocalnos
 toolkits shylinux learning
 ` 24 red black
 
-field "前端" `web.code.git.trend` args `[volcanos]`
-field "后端" `web.code.git.trend` args `[icebergs]`
-field "终端" `web.code.git.trend` args `[contexts]`
+field "前端_volcanos" `web.code.git.trend` args `volcanos`
+field "后端_icebergs" `web.code.git.trend` args `icebergs`
+field "终端_contexts" `web.code.git.trend` args `contexts`
 
 chapter "安装"
 
