@@ -1,7 +1,6 @@
-premenu
-
 title "hello world"
 
+chapter "实践"
 label "实践" `
 code wiki chat team mall
 linux nginx golang redis mysql
@@ -27,33 +26,13 @@ label "引擎" `
 计算引擎 推荐引擎 解析引擎
 ` 24 yellow black
 
-spark
+chapter "项目"
 label "项目" `
-contexts icebergs vocalnos
-toolkits shylinux learning
+intshell icebergs vocalnos
+contexts toolkits learning
 ` 24 red black
 
 field "前端_volcanos" `web.code.git.trend` args `volcanos`
 field "后端_icebergs" `web.code.git.trend` args `icebergs`
 field "终端_contexts" `web.code.git.trend` args `contexts`
-
-chapter "安装"
-
-section "创建项目"
-spark "创建项目" `curl -s https://shylinux.com/publish/template.sh | sh`
-
-section "创建服务"
-spark "创建服务" `curl -s https://shylinux.com/publish/ice.sh | sh`
-
-section "启动服务"
-spark "启动服务" `bin/ice.sh start serve`
-
-section "启动任务"
-spark "启动任务" `bin/ice.sh start space connect dev`
-
-chapter "使用"
-
-field "搜索引擎" `web.chat.search`
-
-field "推荐引擎" `web.chat.commend`
 
