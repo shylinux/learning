@@ -1,9 +1,10 @@
 chapter "实践"
 label "实践" `
-code wiki chat team mall
-linux nginx golang redis mysql
-zsh tmux docker git vim
-`
+. 代码 文档 聊天 团队 市场
+应用流 code wiki chat team mall
+技术栈 linux nginx golang redis mysql
+工具链 zsh tmux docker git vim
+` 24 blue yellow
 
 chapter "理论"
 label "引擎" `
