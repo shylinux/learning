@@ -9,28 +9,11 @@ chapter "理论"
 label "引擎" `
 存储引擎 搜索引擎 解析引擎
 计算引擎 推荐引擎 渲染引擎
-` 24 yellow black
+` stroke yellow fill black
 
 chapter "项目"
 label "项目" `
 intshell icebergs vocalnos
 contexts toolkits learning
-` 24 red black
-
-field "前端_volcanos" `web.code.git.trend` args `volcanos`
-field "后端_icebergs" `web.code.git.trend` args `icebergs`
-field "终端_contexts" `web.code.git.trend` args `contexts`
-
-spark
-label "应用" `
-编辑器 服务器 浏览器
-命令行 虚拟机 开发板
-` 24 yellow blue
-
-spark
-label "理论" `
-启动流程 请求响应 网络路由
-数据结构 系统架构 服务集群
-算法分析 设计模式 人工智能
-` 24 yellow black
+` stroke red fill black
 
