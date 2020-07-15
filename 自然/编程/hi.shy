@@ -1,10 +1,9 @@
 chapter "实践"
 label "实践" `
-. 代码 文档 聊天 团队 市场
-应用流 code wiki chat team mall
-技术栈 linux nginx golang redis mysql
-工具链 zsh tmux docker git vim
-` 24 blue yellow
+code wiki chat team mall
+linux nginx golang redis mysql
+zsh tmux docker git vim
+` stroke blue fill yellow
 
 chapter "理论"
 label "引擎" `
@@ -18,9 +17,8 @@ intshell icebergs vocalnos
 contexts toolkits learning
 ` stroke red fill black
 
-field 收藏 favor
-field 故事 story
-
-shell 当前目录 pwd
-shell 当前时间 date
-shell 主机名 hostname
+chapter "源码"
+field "volcanos_源码" web.code.inner args `[ usr/volcanos proto.js 1 ]`
+field "icebergs_源码" web.code.inner args `[ usr/icebergs type.go 1 ]`
+field "toolkits_源码" web.code.inner args `[ usr/toolkits type.go 1 ]`
+field "intshell_源码" web.code.inner args `[ usr/intshell plug.sh 1 ]`
