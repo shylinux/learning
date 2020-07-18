@@ -1,3 +1,12 @@
+title "shylinux/contexts"
+brief "无边界/无极限 --- 提升工作效率"
+refer "官网" `
+github https://github.com/shylinux/contexts
+docker https://hub.docker.com/repository/docker/shylinux/contexts
+`
+image "qrcode" `https://github.com/shylinux/contexts`
+image "qrcode" `https://hub.docker.com/repository/docker/shylinux/contexts`
+
 chapter "实践"
 label "实践" `
 code wiki chat team mall
@@ -18,7 +27,52 @@ contexts toolkits learning
 ` stroke red fill black
 
 chapter "源码"
+
+chain "项目" `
+shylinux fg cyan
+    learning
+        volcanos fg red bg yellow
+            lib
+            pane
+            plugin
+            publish
+            proto.js
+            frame.js
+    toolkits
+        icebergs fg cyan
+            base
+            core
+            misc
+            type.go
+            meta.go
+            data.go
+            exec.go
+    contexts
+        intshell fg blue bg yellow
+            device
+            system
+            action
+            plug.sh
+            miss.sh
+            test.sh
+` stroke red fill black font-size 16 padding 4 marginx 40
+
+section "icebergs"
+field "icebergs_源码" web.code.git.spide args `[ icebergs ]`
+
+section "volcanos"
+field "volcanos_统计" web.code.git.trend args `[ volcanos ]` action `{ height 200 speed 20 }`
 field "volcanos_源码" web.code.inner args `[ usr/volcanos proto.js 1 ]`
+
+section "icebergs"
+field "icebergs_统计" web.code.git.trend args `[ icebergs ]` action `{ height 200 speed 20 }`
 field "icebergs_源码" web.code.inner args `[ usr/icebergs type.go 1 ]`
+
+section "toolkits"
+field "toolkits_统计" web.code.git.trend args `[ toolkits ]` action `{ height 200 speed 20 }`
 field "toolkits_源码" web.code.inner args `[ usr/toolkits type.go 1 ]`
+
+section "intshell"
+field "intshell_统计" web.code.git.trend args `[ intshell ]` action `{ height 200 speed 20 }`
 field "intshell_源码" web.code.inner args `[ usr/intshell plug.sh 1 ]`
+
