@@ -25,26 +25,24 @@ spark `各种软件、各种系统、各种平台，数据太分散`
 spark `我不关心用什么软件、什么平台，我只关心我想做的事情`
 spark `所有的事情，在一个页面中完成就好`
 
-section "扩展性"
-spark `现在软件更新太慢，就算更新了，也是更新一堆没有的功能`
-spark `所有的软件、我都想自己定制、自己扩展`
-spark `满足各种场景化、个性化`
-
+section "可用性"
+spark `现在软件都是面向大众的，通用的，很难满足各种场景化、个性化`
+spark `所有的软件、我都想自己定制、自己组合、自己扩展`
 
 chapter "contexts安装"
-section "docker"
+section "binary"
 spark "" `
-$ docker run -p 9020:9020 -it shylinux/contexts
+$ curl https://shylinux.com/publish/ice.sh | sh
+$ ctx_self=http://:9020 bin/ice.sh start serve
 ice>
 ` style `{ background lightgray white-space pre text-align left margin-left 10px padding 10px }`
 spark `
 open http://localhost:9020
 `
 
-section "binary"
+section "docker"
 spark "" `
-$ curl https://shylinux.com/publish/ish.sh | sh
-$ bin/ice.sh start serve
+$ docker run -p 9020:9020 -it shylinux/contexts
 ice>
 ` style `{ background lightgray white-space pre text-align left margin-left 10px padding 10px }`
 spark `
