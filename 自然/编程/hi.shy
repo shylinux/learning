@@ -57,16 +57,15 @@ shylinux fg cyan
             test.sh
 ` stroke red fill black font-size 16 padding 4 marginx 40
 
-section "icebergs"
-field "icebergs_源码" web.code.git.spide args `[ icebergs ]`
-
 section "volcanos"
 field "volcanos_统计" web.code.git.trend args `[ volcanos ]` action `{ height 200 speed 20 }`
 field "volcanos_源码" web.code.inner args `[ usr/volcanos proto.js 1 ]`
 
 section "icebergs"
+field "icebergs_项目" web.code.git.spide args `[ icebergs ]`
 field "icebergs_统计" web.code.git.trend args `[ icebergs ]` action `{ height 200 speed 20 }`
 field "icebergs_源码" web.code.inner args `[ usr/icebergs type.go 1 ]`
+
 
 section "toolkits"
 field "toolkits_统计" web.code.git.trend args `[ toolkits ]` action `{ height 200 speed 20 }`
