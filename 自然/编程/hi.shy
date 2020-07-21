@@ -1,3 +1,6 @@
+field "demo" cli.system args `[ pwd pwd pwd ]`
+return
+
 title "shylinux/contexts"
 brief "无边界/无极限 --- 提升工作效率"
 refer "官网" `
