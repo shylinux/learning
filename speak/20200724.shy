@@ -89,6 +89,12 @@ com
     windows
 `
 section "自动化"
+order `
+创建群组
+创建应用
+群组共享
+应用共享
+`
 
 chapter "contexts源码"
 
