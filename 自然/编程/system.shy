@@ -21,4 +21,5 @@ spark `
 添加ssh 的钩子，记录登入登出的操作，并计算时长
 `
 
-field "登录用户" cli.ssh_user args `[ who ]`
+field "登录用户" cli.ssh_user args `[ ]`
+field "ssh_user 源码" web.code.inner args `[ usr/icebergs base/cli/system.go 86 ]`
