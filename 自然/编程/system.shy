@@ -16,10 +16,14 @@ section "方案1"
 spark `
 写一个脚本定时去调用who，记录下当前用户，并计算时长
 `
+field "用户时长" cli.ssh_user args `[ ]` inputs `[
+    { _input text name name action auto }
+    { _input button name 查看 action auto }
+]`
+field "ssh_user 源码" web.code.inner args `[ usr/icebergs base/cli/system.go 86 ]`
+
 section "方案2"
 spark `
 添加ssh 的钩子，记录登入登出的操作，并计算时长
 `
 
-field "登录用户" cli.ssh_user args `[ ]`
-field "ssh_user 源码" web.code.inner args `[ usr/icebergs base/cli/system.go 86 ]`
