@@ -1,0 +1,24 @@
+title "操作系统"
+
+chapter "用户管理"
+section "用户登录"
+refer "" `
+用户登录 https://www.cnblogs.com/liujianzuo888/p/5231081.html
+`
+spark `
+# 查看用户登录时间
+who /var/log/wtmp
+`
+
+field "user" cli.system args `[ who ]`
+
+section "方案1"
+spark `
+写一个脚本定时去调用who，记录下当前用户，并计算时长
+`
+section "方案2"
+spark `
+添加ssh 的钩子，记录登入登出的操作，并计算时长
+`
+
+field "登录用户" cli.ssh_user args `[ who ]`
