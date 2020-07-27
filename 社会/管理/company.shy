@@ -1,0 +1,34 @@
+title "云境天空科技公司"
+
+chapter "公司理念"
+section "公司愿景"
+spark `
+成为一家受人尊敬的科技公司
+`
+section "公司使命"
+order `
+不断提升工作效率
+不断提升组织效率
+`
+section "公司文化"
+order `
+无边界、无极限
+追求极致、始终创业
+开放谦逊、坦承清晰
+Development a Company as a Product
+Context not Control
+`
+chapter "公司业务"
+section "企业服务"
+section "社区服务"
+section "用户服务"
+
+chapter "公司产品"
+section "硬件"
+section "软件"
+section "平台"
+
+chapter "公司制度"
+section "双轨制"
+section "轮岗制"
+section "创业制"
