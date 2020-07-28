@@ -1,0 +1,24 @@
+label "寻因" `天行健，君子以自强不息` fg red; spark
+
+label "理解" `
+人文 感性 理性 灵性 社会 行业 企业 产业 自然 微观 宏观 宇观
+哲学 世界 价值 人生 史学 经济 政治 文化 科学 实验 理论 方程
+` order "{index 4 fg red}" ; spark
+
+label "理解" `
+做人 随缘 随性 随心 做事 交易 交流 交情 做学 多做 多看 多想
+教育 习惯 信用 道德 资本 资源 资格 资历 工程 技术 学术 艺术
+` order "{index 4 fg red}" ; spark
+
+label "思维" `
+分析 联想 综合
+` stroke red ; spark
+
+label "记忆" `
+精神 需求 追求 要求 历史 英雄 家族 阶级 宇宙 天文 气象 地质
+语言 词汇 语法 语义 经济 生产 市场 消费 物理 物质 能量 信息
+文学 散文 诗歌 小说 政治 外交 法制 民生 数学 代数 函数 几何
+艺术 音乐 美术 体育 军事 战略 战术 战争 生命 基因 组织 系统
+` stroke purple order "{index 4 fg red}" ; spark
+
+label "总结" `地势坤，君子厚德载物` fg red; spark
