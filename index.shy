@@ -10,15 +10,19 @@ label "理解" `
 教育 习惯 信用 道德 资本 资源 资格 资历 工程 技术 学术 艺术
 ` order "{index 4 fg red}" ; spark
 
-label "思维" `
-分析 联想 综合
-` stroke red ; spark
-
 label "记忆" `
 精神 需求 追求 要求 历史 英雄 家族 阶级 宇宙 天文 气象 地质
 语言 词汇 语法 语义 经济 生产 市场 消费 物理 物质 能量 信息
 文学 散文 诗歌 小说 政治 外交 法制 民生 数学 代数 函数 几何
 艺术 音乐 美术 体育 军事 战略 战术 战争 生命 基因 组织 系统
-` stroke purple order "{index 4 fg red}" ; spark
+` stroke green order "{index 4 fg red}" ; spark
 
-label "总结" `地势坤，君子厚德载物` fg red; spark
+label "思维" `
+信仰 科学 民主 自由 人际 心理 伦理 道理 传感 属性 关系 规律
+自律 认知 情感 意志 管理 物资 人力 文化 编程 语言 框架 平台
+修养 益智 怡情 养性 物流 交通 管道 电信 控制 过程 状态 特征
+阅历 见识 常识 学识 金融 基金 股票 保险 设计 功能 性能 智能
+` order "{index 4 fg red}" ; spark
+
+
+label "总结" `地势坤，君子以厚德载物` fg red; spark

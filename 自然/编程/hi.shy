@@ -1,5 +1,5 @@
 title "shylinux/contexts"
-brief "无边界/无极限 --- 提升工作效率"
+brief "无边界/无极限 --- 提升组织效率"
 refer "官网" `
 public https://shylinux.com
 github https://github.com/shylinux/contexts
@@ -15,15 +15,14 @@ zsh tmux docker git vim
 ` stroke blue fill yellow
 
 chapter "理论"
-label "引擎" `
-存储引擎 搜索引擎 解析引擎
-计算引擎 推荐引擎 渲染引擎
+label "理论" `
+模块化 集群化 自动化
 ` stroke yellow fill black
 
 chapter "项目"
 label "项目" `
-intshell icebergs vocalnos
-contexts toolkits learning
+volcanos icebergs intshell
+learning toolkits contexts
 ` stroke red fill black
 
 chapter "源码"
@@ -60,18 +59,16 @@ shylinux fg cyan
 section "volcanos"
 field "volcanos_统计" web.code.git.trend args `[ volcanos ]` action `{ height 200 speed 20 }`
 field "volcanos_源码" web.code.inner args `[ usr/volcanos proto.js 1 ]`
+field "volcanos_项目" web.code.git.spide args `[ volcanos ]`
 
 section "icebergs"
-field "icebergs_项目" web.code.git.spide args `[ icebergs ]`
 field "icebergs_统计" web.code.git.trend args `[ icebergs ]` action `{ height 200 speed 20 }`
 field "icebergs_源码" web.code.inner args `[ usr/icebergs type.go 1 ]`
+field "icebergs_项目" web.code.git.spide args `[ icebergs ]`
 
-
-section "toolkits"
-field "toolkits_统计" web.code.git.trend args `[ toolkits ]` action `{ height 200 speed 20 }`
-field "toolkits_源码" web.code.inner args `[ usr/toolkits type.go 1 ]`
 
 section "intshell"
 field "intshell_统计" web.code.git.trend args `[ intshell ]` action `{ height 200 speed 20 }`
 field "intshell_源码" web.code.inner args `[ usr/intshell plug.sh 1 ]`
+field "intshell_项目" web.code.git.spide args `[ intshell ]`
 
