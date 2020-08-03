@@ -9,9 +9,6 @@ brief `
 应用目标实现对源码、文档、群聊、时间、金钱的高效管理
 `
 
-field mall web.mall.asset
-field team web.team.task
-
 section "源码code"
 field code web.code.inner args `[ usr/volcanos proto.js ]`
 section "文档wiki"
