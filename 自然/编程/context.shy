@@ -12,7 +12,7 @@ brief `
 section "源码code"
 field code web.code.inner args `[ usr/volcanos proto.js ]`
 section "文档wiki"
-field code web.wiki.word args `[ learning/index.shy ]`
+field code web.wiki.word
 section "群聊chat"
 field mall web.mall.asset
 section "时间team"
