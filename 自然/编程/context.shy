@@ -2,6 +2,27 @@ title "contexts"
 
 premenu
 
+chapter "产品应用"
+
+brief `
+2020年目标，功能上线 task.hub.com.cn，
+应用目标实现对源码、文档、群聊、时间、金钱的高效管理
+`
+
+field mall web.mall.asset
+field team web.team.task
+
+section "源码code"
+field code web.code.inner args `[ usr/volcanos proto.js ]`
+section "文档wiki"
+field code web.wiki.word args `[ learning/index.shy ]`
+section "群聊chat"
+field mall web.mall.asset
+section "时间team"
+field team web.team.plan
+section "金钱mall"
+field mall web.mall.asset
+
 chapter "创建项目"
 section "下载脚本"
 spark `
