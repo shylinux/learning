@@ -1,0 +1,71 @@
+title "contexts"
+
+premenu
+
+chapter "产品应用"
+
+brief `
+2020年目标，功能上线 task.hub.com.cn，
+应用目标实现对源码、文档、群聊、时间、金钱的高效管理
+`
+
+section "源码code"
+field code web.code.inner args `[ usr/volcanos proto.js ]`
+section "文档wiki"
+field code web.wiki.word
+section "群聊chat"
+field mall web.mall.asset
+section "时间team"
+field team web.team.plan
+section "金钱mall"
+field mall web.mall.asset
+
+chapter "创建项目"
+section "下载脚本"
+spark `
+# 推荐使用docket启动开发环境 docker run -p 9020:9020 -it centos
+# 需要提前安装好GIT yum install -y git
+`
+
+spark `
+$ git clone https://github.com/shylinux/intshell ~/.ish
+$ source ~/.ish/miss.sh
+`
+
+section "生成源码"
+spark `
+$ ish_miss_create demo
+$ source etc/miss.sh
+$ make
+`
+
+section "启动服务"
+spark `
+$ ish_miss_serve
+`
+refer `
+前端页面 http://localhost:9020
+`
+账号:root 密码: root
+
+
+chapter "创建模块"
+section "生成源码"
+spark `
+$ ish_miss_module hello
+`
+
+section "引用模块"
+在src/main.go中加入新模块
+spark `
+import (
+        ...
+        _  "2020xxxx-demo/src/hello"
+        ...
+       )
+`
+
+section "编译重启"
+spark `
+$ make
+`
