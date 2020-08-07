@@ -65,7 +65,7 @@ field "编辑器" web.code.vimer args `[ src/ main.go ]`
 
 section "wiki"
 field "绘图" web.wiki.draw.draw args `[ src/ main.svg ]`
-field "相册" web.wiki.feel args `[ usr/export/web.chat.meet.miss/feel/ ]`
+field "相册" web.wiki.feel args `[ ]`
 
 section "chat"
 field "定位" web.chat.location.location args `[ ]`
