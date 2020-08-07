@@ -59,24 +59,23 @@ brief `
 应用目标实现对源码、文档、群聊、时间、金钱的高效管理
 `
 
-section "源码code"
-field code web.code.inner args `[ usr/volcanos plugin/local/code/inner.js ]`
-field code web.code.inner args `[ usr/icebergs core/code/inner.go ]`
+section "code"
+field "阅读器" web.code.inner args `[ src/ main.shy ]`
+field "编辑器" web.code.vimer args `[ src/ main.go ]`
 
-section "文档wiki"
-field word web.wiki.word
-field word web.code.inner args `[ usr/icebergs core/wiki/word.go ]`
+section "wiki"
+field "绘图" web.wiki.draw.draw args `[ src/ main.svg ]`
+field "相册" web.wiki.feel args `[ usr/export/web.chat.meet.miss/feel/ ]`
 
-section "群聊chat"
-field miss web.chat.meet.miss
-field miss web.code.inner args `[ usr/icebergs core/chat/meet.go ]`
+section "chat"
+field "定位" web.chat.location.location args `[ ]`
+field "复制" web.chat.paste.paste args `[ ]`
+field "资料" web.chat.meet.miss args `[ ]`
 
-section "时间team"
-field task web.team.task
-field task web.team.plan
-field task web.code.inner args `[ usr/volcanos plugin/local/team/plan.js ]`
-field task web.code.inner args `[ usr/icebergs core/team/team.go ]`
+section "team"
+field "任务" web.team.task args `[ ]`
+field "任务" web.team.plan args `[ ]`
 
-section "金钱mall"
-field asset web.mall.asset
-field asset web.code.inner args `[ usr/icebergs core/mall/mall.go ]`
+section "mall"
+field "资产" web.mall.asset args `[ ]`
+
