@@ -16,6 +16,7 @@ zsh tmux docker git vim
 
 chapter "理论"
 label "理论" `
+重复性 复杂性 可用性
 模块化 集群化 自动化
 ` stroke yellow fill black
 
