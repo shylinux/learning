@@ -1,54 +1,94 @@
 title "contexts"
-
 premenu
 
-chapter "创建项目"
-section "下载脚本"
-spark `
-# 推荐使用docket启动开发环境 docker run -p 9020:9020 -it centos
-# 需要提前安装好GIT yum install -y git
+chapter "体验项目"
+contexts已经生成了docker的镜像，并上传到了docker.io，可以直接下载启动服务
+spark shell `
+$ docker run -it -p 9020:9020 shylinux/contexts
 `
 
 spark `
+服务启动后，就可以通过浏览器访问本服务
+`
+refer `
+打开浏览器 http://localhost:9020
+`
+spark `
+登录的账号: root 密码: root
+`
+
+chapter "创建项目"
+spark `
+如果docker镜像版，功能无法满足需求，可以自己创建项目，进行完全定制
+为了方便安装，推荐使用docker创建开发环境
+`
+spark shell `
+$ docker run -dt -p 9020:9020 centos
+`
+
+spark `
+进入容器后，安装需要的工具
+`
+spark shell `
+$ yum install -y git make
+`
+
+section "下载脚本"
+spark `
+为了方便创建项目和模块，intshell封装了相关的脚本，下载intshell后，source脚本miss.sh，即可
+`
+
+spark shell `
 $ git clone https://github.com/shylinux/intshell ~/.ish
 $ source ~/.ish/miss.sh
 `
-
-section "生成源码"
 spark `
+推荐，将miss.sh，加到bashrc中，方便以后使用
+`
+
+section "创建项目"
+spark shell `
 $ ish_miss_create demo
-$ source etc/miss.sh
 $ make
 `
 
 section "启动服务"
-spark `
+spark shell `
 $ ish_miss_serve
 `
-refer `
-前端页面 http://localhost:9020
-`
-账号:root 密码: root
 
+spark `
+服务启动后，就可以通过浏览器访问本服务
+`
+refer `
+打开浏览器 http://localhost:9020
+`
+spark `
+登录的账号: root 密码: root
+`
 
 chapter "创建模块"
-section "生成源码"
 spark `
+打开一个新的终端，确定工具脚本已经加载到终端，如果没有加入bashrc中，可以手动加载一下
+`
+
+section "创建模块"
+spark shell `
 $ ish_miss_module hello
 `
 
 section "引用模块"
-在src/main.go中加入新模块
-spark `
+在src/main.go中加入新建模块
+spark shell `
 import (
         ...
-        _  "2020xxxx-demo/src/hello"
+        _  "20200730-demo/src/hello"
         ...
        )
 `
 
 section "编译重启"
-spark `
+spark shell `
 $ make
 `
 
