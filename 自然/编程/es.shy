@@ -1,8 +1,0 @@
-title "ElasticSearch"
-refer `
-官网 https://www.elastic.co/cn/elasticsearch/
-源码 https://github.com/elastic/elasticsearch
-文档 https://www.elastic.co/guide/index.html
-安装 https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html
-简介 https://www.jianshu.com/p/403c9d5b1463
-`

@@ -1,0 +1,51 @@
+title "favor"
+premenu
+
+chapter "logo"
+refer `
+艺术字 http://www.akuziti.com/
+`
+
+chapter "Tech"
+field webpack web.code.webpack
+field binpack web.code.binpack
+field modpack web.code.modpack
+
+
+chapter "Raft"
+refer `
+官网 https://raft.github.io/
+`
+
+chapter "Ceph"
+refer `
+官网 https://docs.ceph.com/docs/master/
+源码 https://github.com/ceph/ceph
+简介 https://blog.csdn.net/mingongge/article/details/100788388
+`
+
+chapter "Ledis"
+refer `
+源码 https://github.com/ledisdb/ledisdb
+`
+
+chapter "Dragonboat"
+refer `
+源码 https://github.com/lni/dragonboat
+`
+
+chapter "SuperVisor"
+refer `
+官网 http://supervisord.org/
+源码 https://github.com/Supervisor/supervisor
+`
+
+chapter "ElasticSearch"
+refer `
+官网 https://www.elastic.co/cn/elasticsearch/
+源码 https://github.com/elastic/elasticsearch
+文档 https://www.elastic.co/guide/index.html
+安装 https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html
+简介 https://www.jianshu.com/p/403c9d5b1463
+`
+
