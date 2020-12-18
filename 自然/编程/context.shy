@@ -64,16 +64,16 @@ shylinux fg cyan
 section "volcanos"
 field "volcanos_统计" web.code.git.trend args `[ volcanos ]` action `{ height 200 speed 20 }`
 field "volcanos_源码" web.code.inner args `[ usr/volcanos proto.js 1 ]`
-field "volcanos_项目" web.code.git.spide args `usr/volcanos`
+field "volcanos_项目" web.code.git.spide args `volcanos`
 
 section "icebergs"
 field "icebergs_统计" web.code.git.trend args `[ icebergs ]` action `{ height 200 speed 20 }`
 field "icebergs_源码" web.code.inner args `[ usr/icebergs type.go 1 ]`
-field "icebergs_项目" web.code.git.spide args `usr/icebergs`
+field "icebergs_项目" web.code.git.spide args `icebergs`
 
 
 section "intshell"
 field "intshell_统计" web.code.git.trend args `[ intshell ]` action `{ height 200 speed 20 }`
 field "intshell_源码" web.code.inner args `[ usr/intshell plug.sh 1 ]`
-field "intshell_项目" web.code.git.spide args `usr/intshell`
+field "intshell_项目" web.code.git.spide args `intshell`
 
