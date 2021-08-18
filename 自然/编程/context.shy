@@ -6,10 +6,10 @@ refer `
 brief "无边界/无极限 --- 提升组织效率"
 refer "官网" `
 public https://shylinux.com
-github https://github.com/shylinux/contexts
+github https://shylinux.com/x/contexts
 docker https://hub.docker.com/repository/docker/shylinux/contexts
 `
-image "qrcode" `https://github.com/shylinux/contexts`
+image "qrcode" `https://shylinux.com/x/contexts`
 
 chapter "实践"
 label "实践" `

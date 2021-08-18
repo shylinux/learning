@@ -39,7 +39,7 @@ spark `
 `
 
 spark shell `
-$ git clone https://github.com/shylinux/intshell ~/.ish
+$ git clone https://shylinux.com/x/intshell ~/.ish
 $ source ~/.ish/miss.sh
 `
 spark `

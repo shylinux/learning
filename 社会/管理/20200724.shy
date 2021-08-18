@@ -4,10 +4,10 @@ title "shylinux/contexts"
 brief "无边界/无极限 --- 提升工作效率"
 refer "官网" `
 public https://shylinux.com
-github https://github.com/shylinux/contexts
+github https://shylinux.com/x/contexts
 docker https://hub.docker.com/repository/docker/shylinux/contexts
 `
-image "qrcode" `https://github.com/shylinux/contexts`
+image "qrcode" `https://shylinux.com/x/contexts`
 
 chapter "大纲"
 premenu
@@ -51,7 +51,7 @@ open http://localhost:9020
 
 section "source"
 spark "" `
-$ git clone https://github.com/shylinux/contexts
+$ git clone https://shylinux.com/x/contexts
 $ cd contexts && source etc/miss.sh
 $ make
 $ ish_miss_serve
