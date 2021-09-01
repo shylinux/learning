@@ -1,0 +1,64 @@
+navmenu `
+入门简介 tutor.shy
+  集群化
+  模块化
+  自动化
+使用手册 manual.shy
+  安装使用 install.shy
+  创建空间
+  创建群组
+  创建脚本
+编程手册 program.shy
+  脚本编程
+  模块编程
+  框架编程
+参考手册 refer.shy
+  函数列表
+  模块列表 context.shy
+  命令列表 command.shy
+  服务列表
+  事件列表
+  参数列表
+`
+
+premenu
+
+title "contexts"
+
+refer `
+官网 https://shylinux.com
+源码 https://shylinux.com/x/contexts
+文档 https://shylinux.com/x/learning
+`
+
+chapter "实践"
+label `
+code wiki chat team mall
+linux nginx context redis mysql
+bash git golang vim tmux
+` fg blue bg yellow
+
+chapter "理论"
+label `
+集群化 模块化 自动化
+` fg yellow bg black font-family none
+
+chapter "项目"
+label `
+intshell icebergs volcanos
+contexts toolkits learning
+` fg red bg black
+
+section "火山架"
+field "趋势图" web.code.git.trend args `volcanos`
+field "架构图" web.code.git.spide args `volcanos`
+
+section "冰山架"
+field "趋势图" web.code.git.trend args `icebergs`
+field "架构图" web.code.git.spide args `icebergs`
+
+section "神农架"
+field "趋势图" web.code.git.trend args `intshell`
+field "架构图" web.code.git.spide args `intshell`
+
+endmenu
