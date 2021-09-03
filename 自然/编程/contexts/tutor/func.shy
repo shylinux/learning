@@ -1,0 +1,21 @@
+premenu
+
+title "多功能"
+field "模块" context
+field "模块" command
+
+chapter "计划"
+field "计划" web.team.plan
+
+chapter "相册"
+field "相册" web.wiki.feel
+
+chapter "绘图"
+field "绘图" web.wiki.draw
+
+chapter "编程"
+field "编辑器" web.code.vimer
+field "趋势图" web.code.git.trend args `icebergs`
+field "架构图" web.code.git.spide args `icebergs`
+
+
