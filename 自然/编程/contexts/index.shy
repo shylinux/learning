@@ -12,10 +12,16 @@ navmenu `
   工作空间 manual/space.shy
   工作脚本 manual/word.shy
 
-编程手册 program.shy
-  脚本编程 program/script.shy
-  模块编程 program/module.shy
-  框架编程 program/context.shy
+服务手册 service.shy
+  认证服务 service/auth.shy
+  域名服务 service/domain.shy
+  空间服务 service/space.shy
+  源码服务 service/code.shy
+
+编程手册 devops.shy
+  脚本编程 devops/script.shy
+  模块编程 devops/module.shy
+  框架编程 devops/context.shy
 
 参考手册 refer.shy
   参数列表 refer/runtime.shy
