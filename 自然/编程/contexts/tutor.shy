@@ -1,8 +1,34 @@
 source index.shy
 
 title "入门简介"
+chapter "终端工具链，用一个20M的程序，一键搭建起完整的云计算与云开发"
 
 spark `
-contexts 通过集群化、模块化、自动化的方式，可以在各种设备上，一键搭起完整的云计算服务。
+contexts 的起源是一个工具框架，将开发过程中的自研的各种小工具集成到一起。在每次项目开发中，可以自由的组合这些工具，形成一个完整的工具链，在一个页面中就完成开发的所有工作。
+`
+order `
+多用户，contexts 可以单机使用，也可以多用户协同共享使用
+多群组，contexts 的设计完全基于群组的方式，去组织用户、权限、空间、设备、功能、文档
+多设备，任意部署了 contexts 的设备，就可以组合成网络，相互调用其它节点上的任意功能
+多空间，在同一设备上，可以创建任意多个空间，每个空间都是一个独立的运行单元
+易部署，contexts 使用 golang 开发，最终只有一个执行文件，同时前端代码也打包进执行文件中
+易扩展，contexts 定义了统一标准的接口，所有的功能都实现了模块化，可以自由的组合与定制
+`
+
+section "一键安装"
+spark shell `
+ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp binary
+`
+spark `
+在 linux 与 MacOSX 上，打开命令行终端，直接执行如上命令，便可以下载并启动 contexts，
+在 windows 上建议安装 GitBash https://git-scm.com/download/win，然后执行安装命令。
+`
+
+section "源码安装"
+spark shell `
+ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp project
+`
+spark `
+如果已有的功能模块满足不了需求，可以开发定制自己的模块。执行如上命令，可以一键创建项目模板，只需要添加自己的功能模块即可。
 `
 
