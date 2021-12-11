@@ -1,34 +1,62 @@
 source index.shy
 
 title "入门简介"
-chapter "终端工具链，用一个20M的程序，一键搭建起完整的云计算与云开发"
+brief "终端工具链，一个可以当成操作系统、应用框架、网络平台来用的超级项目。"
 
-spark `
-contexts 的起源是一个工具框架，将开发过程中的自研的各种小工具集成到一起。在每次项目开发中，可以自由的组合这些工具，形成一个完整的工具链，在一个页面中就完成开发的所有工作。
-`
 order `
-多用户，contexts 可以单机使用，也可以多用户协同共享使用
+易部署，contexts 使用 golang 开发，最终只有一个执行文件，同时前端代码也被打包进了执行文件，可以在任意机器上一键部署服务
+易开发，contexts 定义了统一的标准的接口，所有的功能都是以模块化的方式，进行开发与使用的，可以自行开发出任意的功能模块
+易定制，contexts 提供了各种场景化与个性化的使用方式，用户可以组合任意的功能，自动生成各种网页，从而创建各种网站
+
+多用户，contexts 可以通过任意终端进行访问，所有的模块功能都可以实现多用户的在线协同
 多群组，contexts 的设计完全基于群组的方式，去组织用户、权限、空间、设备、功能、文档
-多设备，任意部署了 contexts 的设备，就可以组合成网络，相互调用其它节点上的任意功能
-多空间，在同一设备上，可以创建任意多个空间，每个空间都是一个独立的运行单元
-易部署，contexts 使用 golang 开发，最终只有一个执行文件，同时前端代码也打包进执行文件中
-易扩展，contexts 定义了统一标准的接口，所有的功能都实现了模块化，可以自由的组合与定制
+多空间，在同一设备上，可以创建出任意多个空间，每个空间都是一个完全独立的运行单元
+多设备，任意部署了 contexts 的设备，都可以相互连接组合成一个网络，通过任何一台设备，都可以使用整个网络的所有设备的所有功能
 `
 
-section "一键安装"
+chapter "安装与使用"
+section "安装命令"
 spark shell `
 ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp binary
 `
 spark `
-在 linux 与 MacOSX 上，打开命令行终端，直接执行如上命令，便可以下载并启动 contexts，
-在 windows 上建议安装 GitBash https://git-scm.com/download/win，然后执行安装命令。
+在 linux 或 macOSX 上，打开命令行终端，直接执行如上命令，便可以下载并启动 contexts，
+如果在 windows 上，建议安装 <a href="https://git-scm.com/download/win">GitBash</a>，然后再执行安装命令。
+服务启动后，便可通过命令交互的方式使用所有功能。
+也可以打开网页 <a href="http://localhost:9020"></a>，用界面操作的方式使用所有功能。
 `
 
-section "源码安装"
+section "创建项目"
 spark shell `
 ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp project
 `
 spark `
-如果已有的功能模块满足不了需求，可以开发定制自己的模块。执行如上命令，可以一键创建项目模板，只需要添加自己的功能模块即可。
+当已有的功能模块无法满足需求时，可以创建一个新项目并开发所需要的模块。
+打开命令行终端，直接执行如上命令，便将在当前目录下创建一个新的项目并启动此服务。
+同样可以打开网页 <a href="http://localhost:9020"></a>，使用服务自带的完整工具链，进行开发与调试。
 `
+
+chapter "文档系统"
+spark `
+contexts 内部实现了各种文档的命令，可以通过这些命令，构造出丰富的文档，也可以解析出各种其它格式的文件。
+打开 <a href="http://localhost:9020/chat/cmd/"></a>，便可以浏览当前目录下的所有文件，
+然后点击列表中的文件名 path，便可以解析并查看此文件内容。
+`
+
+section "使用示例"
+spark `
+contexts 推荐使用 .shy 的文件格式来存储脚本与文档。
+使用编辑器在当前目录的 src/ 下，添加一个脚本 hi.shy，
+并输入如下内容
+`
+spark inner `
+title "标题内容"
+spark "文本内容"
+field "目录浏览" nfs.dir
+`
+spark `
+打开 <a href="http://localhost:9020/chat/cmd/src/hi.shy"></a>，便可以查看此文件。
+`
+
+chapter "群组系统"
 
