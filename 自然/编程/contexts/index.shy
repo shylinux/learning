@@ -1,11 +1,6 @@
 navmenu `
 回到首页 home
 入门简介 tutor.shy
-  多设备 tutor/node.shy
-  多任务 tutor/task.shy
-  多功能 tutor/func.shy
-  多用户 tutor/user.shy
-
 使用手册 manual.shy
   安装命令 manual/install.shy
   应用群组 manual/river.shy

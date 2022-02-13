@@ -1,12 +1,12 @@
 source index.shy
 
 title "入门简介"
-brief "终端工具链，一个可以当成操作系统、应用框架、网络平台来用的超级项目。"
+brief "终端工具链，一个可以当成应用框架、网络平台、操作系统来使用的超级项目。"
 
 order `
-易部署，contexts 使用 golang 开发，最终只有一个执行文件，同时前端代码也被打包进了执行文件，可以在任意机器上一键部署服务
+易部署，contexts 使用 golang 开发，最终只有一个执行文件，同时前端代码也被打包进了执行文件，可以在任意机器上一键启动所有服务
 易开发，contexts 定义了统一的标准接口，所有的功能都是以模块化的方式，进行开发与使用，可以自行开发出任意功能的模块
-易定制，contexts 提供了各种场景化与个性化的使用方式，用户可以组合任意的功能，自动生成各种网页，从而创建各种网站
+易定制，contexts 提供了各种场景化与个性化的使用方式，用户可以组合任意的功能，自动生成各种网页，从而快速创建各种网站
 
 多用户，contexts 可以通过任意终端进行访问，所有的模块功能都可以实现多用户的在线协同
 多群组，contexts 的设计完全基于群组的方式，去组织用户、权限、空间、设备、功能、文档
@@ -14,49 +14,142 @@ order `
 多设备，任意部署了 contexts 的设备，都可以相互连接组合成一个网络，通过任何一台设备，都可以使用整个网络的所有设备的所有功能
 `
 
-chapter "安装与使用"
-section "安装命令"
+chapter "安装与启动"
 spark shell `
 ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp binary
 `
 spark `
-在 linux 或 macOSX 上，打开命令行终端，直接执行如上命令，便可以下载并启动 contexts，
-如果在 windows 上，建议安装 <a href="https://git-scm.com/download/win">GitBash</a>，然后再执行安装命令。
-服务启动后，便可通过命令交互的方式使用所有功能。
-也可以打开网页 <a href="http://localhost:9020"></a>，用界面操作的方式使用所有功能。
-`
-
-section "创建项目"
-spark shell `
-ctx_temp=$(mktemp)\; curl -fsSL https://shylinux.com -o $ctx_temp\; source $ctx_temp project
+在 linux 或 macOSX 上，打开命令行终端，直接执行如上命令，便可以下载并启动 contexts，如果在 windows 上，建议安装 <a href="https://git-scm.com/download/win">GitBash</a>，然后在终端中执行安装命令。
 `
 spark `
-当已有的功能模块无法满足需求时，可以创建一个新项目并开发所需要的模块。
-打开命令行终端，直接执行如上命令，便将在当前目录下创建一个新的项目并启动此服务。
-同样可以打开网页 <a href="http://localhost:9020"></a>，使用服务自带的完整工具链，进行开发与调试。
+服务启动后，便可通过命令交互的方式使用所有功能。也可以打开网页 <a href="http://localhost:9020"></a>，用界面交互的方式使用。
 `
 
-chapter "文档系统"
+section "命令交互"
 spark `
-contexts 内部实现了各种文档的命令，可以通过这些命令，构造出丰富的文档，也可以解析出各种其它格式的文件。
-打开 <a href="http://localhost:9020/chat/cmd/"></a>，便可以浏览当前目录下的所有文件，
-然后点击列表中的文件名 path，便可以解析并查看此文件内容。
+contexts 在启动时，默认会启动一个终端解析器，可以像 shell 一样解析并执行命令。
+contexts 中的所有功能都是以模块命令的方式开发的，所以通过命令可以使用所有的功能。
+`
+section "网页交互"
+spark `
+contexts 自带的一个前端框架，会对模块命令进行解析并自动生成前端组件，所有的模块命令随时都可以用组件的形式添加到任意网页上。
+这样就可以随时随地的根据场景与需求，将所需要的功能快速的组合到一起，在一个网页中高效顺畅的完成一个完整的工作流。
 `
 
-section "使用示例"
+chapter "创建空间"
 spark `
-contexts 推荐使用 .shy 的文件格式来存储脚本与文档。
-使用编辑器在当前目录的 src/ 下，添加一个脚本 hi.shy，
-并输入如下内容
+contexts 在一台设备上可以启动多个进程，类似 nginx 主从式的进程模型，
+有一个 server 节点与多个 worker 节点，每个 worker 节点都运行在各自的目录下，拥有独立的空间。
+server 节点会启动 web 服务并自动生成网页，将网页中的命令请求分发到各个 worker 节点上，并将执行结果显示到网页上。
 `
-spark inner `
-title "标题内容"
-spark "文本内容"
-field "目录浏览" nfs.dir
-`
+section "网页操作"
 spark `
-打开 <a href="http://localhost:9020/chat/cmd/src/hi.shy"></a>，便可以查看此文件。
+打开网页 <a href="http://localhost:9020"></a> ，找到创建菜单（菜单栏 -> 创建 -> 创建空间），
+在弹出的输入框中，输入 name 后，点击提交即可创建新的空间，server 节点会启动一个新的 worker 进程来管理此空间。
+随后会自动打开一个新的网页 http://localhost:9020/chat/pod/xxxx，通过这个网页就可以使用新空间的各种功能。
 `
 
-chapter "群组系统"
+section "命令操作"
+spark `也可以在启动服务的命令行中创建空间，输入如下命令即可，demo 是新空间的名称，可以自行定义。`
+spark shell `dream start name demo`
+spark `然后通过 space 命令，可以向此空间下发各种命令，并将执行结果显示到终端`
+spark shell `space demo system pwd`
+
+chapter "创建模块"
+spark `
+contexts 提供了一个完整的前后端框架，可以快速的开发出各种功能模块。
+contexts 会自动将这些功能模块转换成终端命令、前端组件、远程调用等，从而做到一份代码可以随时随地被各种方式使用。
+`
+section "添加代码"
+spark `
+vimer 命令提供了代码编辑的功能，通过 autogen 子命令可以生成模块的示例代码。在此基础上添加自己的代码即可。
+如下命令，会自动生成一个 src/hi/hi.go 的模块文件，并在 src/main.go 中引用此模块。
+`
+spark shell `vimer autogen main src/main.go name hi`
+field "src/hi/hi.go" web.code.inner spark `
+package hi
+
+import (
+	"shylinux.com/x/ice"
+)
+
+type hi struct {
+	ice.Zone
+}
+
+func (h hi) List(m *ice.Message, arg ...string) {
+	h.Zone.List(m, arg...)
+}
+
+func init() { ice.Cmd("web.code.hi.hi", hi{}) }
+`
+
+section "编译项目"
+spark `
+vimer 的 compile 子命令，提供了编译的功能，编译成功后，服务进程会自动重启。
+`
+spark shell `vimer compile`
+
+section "执行命令"
+spark `服务重启后，即可通过 web.code.hi.hi 命令使用新功能。insert 子命令可以添加数据，主命令查看数据。`
+spark shell `web.code.hi.hi insert zone hi text hello`
+spark shell `web.code.hi.hi`
+
+chapter "创建网站"
+spark `
+通过 contexts 启动了多个空间、添加了多个命令后，就可以将这些元素快速组装成各种网页，从而创建出各种各样的网站。
+`
+spark `contexts 通过一种非常简单的描述性语言，用纯文本的方式定义网站。`
+spark `在目录 src/website/ 下创建文件 hi.txt，打开 <a href="http://localhost:9020/chat/website/hi.txt"></a> 即可查看自动生成的网页`
+field "src/website/hi.txt" web.code.inner spark `
+系统管理
+	系统命令
+		cli.runtime
+		cli.system
+		cli.qrcode
+	文件命令
+		nfs.dir
+		nfs.cat
+		nfs.tail
+`
+
+spark `
+src/website/ 目录是固定的，contexts 只会对此目录的 txt 文件进行解析。
+每一行都是一个树的节点，通过缩进代表层级，通过 key value 的形式附加各种属性。
+分叉节点都会添加到导航栏的结构树中，作为导航选项，叶子节点都会自动解析成组件添加到工作台中。
+当导航栏选中任意个分叉节点时，其叶子节点的命令解析的组件，会自动显示到工作台中。
+`
+spark `生成网页的预览效果如下`
+spark field `
+系统管理
+	系统命令
+		cli.runtime
+		cli.system
+		cli.qrcode
+	文件命令
+		nfs.dir
+		nfs.cat
+		nfs.tail
+`
+
+chapter "创建群组"
+spark `
+contexts 中的资源是以群组的方式进行组织，像聊天软件的群组一样，
+用户可以创建任意的群组，然后将相关的人员、工具、资源等全都添加进去。
+每个群组下可以创建多个应用，每个应用下可以添加多个命令。
+在菜单栏和右键菜单中可以看到各种创建选项，输入相关的信息即可创建。
+`
+spark shell `river create type public name demo`
+
+chapter "共享应用"
+spark `
+各种资源，如群组、应用、工具等，都可以一键共享，实现多人的在线协同，从而降低沟通成本，提升工作效率。
+在菜单栏和右键菜单中可以看到各种共享选项，输入相关的信息即可一键分享。
+`
+
+chapter "添加设备"
+spark `
+contexts 还支持多设备组建集群，任意服务节点都可以作为代码服务器、镜像服务器、认证服务器、代理服务器、文件服务器等。
+多台部署了 contexts 的设备，可以任意组织网络结构，每个节点都可以单独提供所有服务，也可以访问其它节点上的所有功能。
+`
 
