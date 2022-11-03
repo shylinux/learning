@@ -1,3 +1,5 @@
+source "index.shy"
+
 chapter "安装命令"
 
 web.code.publish contexts binary
