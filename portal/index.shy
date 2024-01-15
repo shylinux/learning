@@ -1,0 +1,9 @@
+navmenu `
+"{{ .Make.Remote | Base | Capital }}" /
+_
+"下 载" download/
+"文 档" started/
+"命 令" commands/
+"开 发" development/
+"资 源" https://repos.shylinux.com/explore/repos
+`

@@ -1,0 +1,52 @@
+style flex
+	style column
+		title "{{ .Make.Remote | Base | Capital }}"
+		spark title "一个功能完备的工具系统"
+		order `
+将编辑器、命令行、数据库、编译器等几百种工具，以模块化的方式，高度集成到一个 16M 的程序文件中。
+一键部署到各种机器上，快速启动很多个工作空间，以集群化的方式，将这些空间、设备高度组织到一起。
+每个工具都有网页界面，以自己的数据逻辑将其它所有的工具与空间，组织到自己的界面中，高效的完成各种工作。
+`
+		style flex
+			spark button "体 验" route "https://demo.shylinux.com" bg blue fg white
+			spark button "下 载" route "download/" bg blue fg white
+			spark button "文 档" route "started/" bg blue fg white
+		style end
+	style end
+	style column flex "0 0 500px" overflow hidden padding 10px
+		spark inner src/main.go width 480px
+		shell `
+git clone {{ .Make.Remote }}
+cd {{ .Make.Remote | Base }} && source etc/miss.sh
+
+./bin/ice.bin
+
+open http://localhost:9020
+` style.width 480px
+	style
+style end
+
+spark title "工作空间"
+spark `比虚拟机和容器，更加轻量，每个空间都是一个完整的系统，拥有各种软件与环境。
+将软件、配置、数据以源码库形式保存，可以保存备份，可以快速分享与传播，可以随时二次开发，可以直接编译启动。
+`
+field "工作空间" web.dream
+
+spark title "电脑桌面"
+spark `一款网页版的电脑桌面，打开网页即可随时随地的使用各种软件，
+无论这些软件是运行在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "电脑桌面" web.chat.macos.desktop style output
+
+spark title "计划表"
+spark `一款网页版的任务计划表，打开网页即可随时随地的安排时间与任务。`
+field "计划表" web.team.plan
+
+spark title "编辑器"
+spark `一款网页版的编辑器，打开网页即可随时随地的编程，
+无论这些代码是保存在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "编辑器" web.code.inner
+
+spark title "命令行"
+spark `一款网页版的命令行，打开网页即可随时随地的敲命令，
+无论这些命令是运行在本机，还是远程，还是任何虚拟的空间，无论是内存还是磁盘。`
+field "命令行" web.code.xterm args "ish"
