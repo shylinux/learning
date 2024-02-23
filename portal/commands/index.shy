@@ -18,6 +18,7 @@ navmenu `
 		dream dream.shy
 		serve serve.shy
 		space space.shy
+	web web/
 核心模块 core/
 		amap usr/icebergs/core/chat/location/amap.shy
 		bmap usr/icebergs/core/chat/location/bmap.shy
