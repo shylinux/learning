@@ -1,0 +1,23 @@
+title "应用商店"
+spark `除了本机创建工作空间外，还可以从其它机器上直接复制下载空间。`
+spark demo store
+return
+title "应用市场"
+spark `对于操作系统来说，进程与文件就是最基本的元素。`
+spark `对于工具系统来说，空间与源码就是最基本的元素。` 
+spark `
+就像程序文件可以用来启动进程，项目源码可以直接启动 Contexts 的工作空间，工作空间的所有配置与数据也会保存到项目源码中。
+所以代码平台直接可以成为应用市场，项目源码可以一键启动工作空间。
+`
+chapter "代码平台"
+spark `
+Contexts 提供了完整的前后端框架与工具，可以快速开发出新的项目与模块。
+基于 Contexts 框架开发的项目，都可以直接用来启动 Contexts 的空间。
+这些项目可以存放到任意的平台上，在启动工作空间时，指定代码地址即可。
+`
+spark `
+为了方便用户使用，Contexts 提供了代码平台 <a>https://repos.shylinux.com/explore/repos</a>。
+也可以通过命令工具 web.code.git.search 来访问。在项目列表中，点启动按钮，可以直接下载代码并启动工作空间。
+`
+spark demo web.store
+

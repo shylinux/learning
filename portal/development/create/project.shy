@@ -2,7 +2,7 @@ title "创建项目"
 spark `当 Contexts 自带的软件工具，无法满足使用需求时，可使用 Contexts 提供的框架与工具，快速创建出新的项目。`
 
 chapter "创建项目"
-spark `Contexts 提供了后端框架 <code>shylinux.com/x/ice</code>，只需要通过 import 引入依赖，并调用 ice.Run() 即可启动框架。`
+spark `Contexts 提供了后端框架 <code>shylinux.com/x/ice</code>，只需要通过 import 引入依赖，并调用 ice.Run() 即可启动完整的工具系统。`
 section "初始化"
 spark `先取好一个项目名，并用项目名创建一个新的目录，将这里的 demo 换成自己的项目名即可，并初始化成 golang 的项目 。`
 shell `
@@ -42,14 +42,16 @@ quit 命令，不保存数据，直接退出服务。
 `
 
 section "访问服务"
-spark `Contexts 的后端框架，默认添加了很多功能模块，开箱即用，如下列表。`
+spark `Contexts，默认添加了很多功能模块，开箱即用，如下列表。`
 refer `
 首页 http://localhost:9020/
-官网 http://localhost:9020/wiki/portal/
-后台 http://localhost:9020/chat/portal/
-桌面 http://localhost:9020/chat/cmd/desktop
-文档 http://localhost:9020/chat/cmd/word
-编辑器 http://localhost:9020/chat/cmd/vimer
+官网 http://localhost:9020/c/portal
+后台 http://localhost:9020/c/admin
+桌面 http://localhost:9020/c/desktop
+文档 http://localhost:9020/c/word
+编程 http://localhost:9020/c/vimer
+空间 http://localhost:9020/c/dream
+矩阵 http://localhost:9020/c/matrix
 `
 
 chapter "添加模块"
@@ -69,6 +71,6 @@ section "搜索栏"
 spark `将新功能添加到搜索栏。打开搜索框，在输入关键字前，会提前展示一些内容。`
 
 chapter "命令网页"
-spark `新添加的功能模块，默认的就会有一个独立的网页展示。地址就像 <a>http://localhost:9020/chat/cmd/vimer</a>，其中 cmd 后面就是工具的名称。
+spark `新添加的功能模块，默认的就会有一个独立的网页展示。地址就像 <a>http://localhost:9020/c/vimer</a>，其中 /c/ 后面就是工具的名称。
 这样就可以通过 URL 很快的打开任意的软件工具，直接快速的使用功能。
 `

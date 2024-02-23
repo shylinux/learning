@@ -19,15 +19,25 @@ navmenu `
   "任务计划" plan.shy
   "笔记文档" note.shy
   "官方网站" site.shy
-  "思维导图" draw.shy
-  "应用桌面" desktop.shy
 
 "高级特性" feature/
-  "应用市场" repos.shy
+  "应用桌面" desktop.shy
   "工作空间" space.shy
+  "应用商店" store.shy
+  "网络服务" spide.shy
+  "服务发现" broad.shy
   "组建集群" cluster.shy
-  "共享链接" share.shy
-  "认证授权" auth.shy
+  "服务编排" matrix.shy
+  "自动化" script.shy
+
+"权限管理" auth/
+  "共享链" share.shy
+  "令牌桶" token.shy
+  "邮箱" email.shy
+  "邀请" offer.shy
+  "注册" apply.shy
+  "用户" user.shy
+  "登录" auth.shy
 
 "应用管理" managing/
   "目录结构" dir.shy

@@ -1,3 +1,16 @@
+title "登录"
+spark `Contexts 提供了很多种登录方式。
+默认会显示扫码登录、命令登录、单点登录。`
+spark demo header
+chapter "登录方式"
+section "命令登录"
+section "扫码登录"
+section "单点登录"
+chapter "扩展方式"
+section "邮箱登录"
+section "微信扫码"
+return
+
 title "认证授权"
 spark `Contexts 有多种认证方式，但就是坚决不支持密码，因为密码是非常不安全，且会给用户添加很多负担。`
 

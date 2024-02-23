@@ -1,13 +1,12 @@
 title "快速下载"
 chapter "下载程序"
 spark `Contexts 使用 Golang 开发，支持交叉编译，所以在各种操作系统上都只需要一个 bin 文件，直接下载执行即可。`
-spark `
-为了方便下载并快速启动，可以使用如下命令。
-自动选择下载命令 curl 或 wget，
-自动识别出操作系统与处理器类型，然后下载所需的 bin 文件，并自动启动服务进程。
-点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。
-`
+spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 web.code.publish binary
+spark `
+此命令会自动选择下载命令 curl 或 wget，
+并自动识别出操作系统与处理器类型，下载所需的 bin 文件，最后自动启动服务进程。
+`
 spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download">Git-Bash</a>，在 Git-Bash 的命令行中下载。`
 
 chapter "使用方式"

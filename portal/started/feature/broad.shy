@@ -1,0 +1,4 @@
+title "服务发现"
+spark `Contexts 在启动服务时，会发送 UDP 广播，通知同一局域网中的所有主机，
+其它机器上的 Contexts 在收到广播信息后，会将本机发现的所有服务地址，发送出去，从而实现服务发现。`
+spark demo broad
