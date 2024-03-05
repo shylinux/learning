@@ -1,7 +1,0 @@
-navmenu `
-"{{ .Make.Remote | Base | Capital }}" /
-_
-"下 载" download/
-"文 档" started/
-"开 发" development/
-`
