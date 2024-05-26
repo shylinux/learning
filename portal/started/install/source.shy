@@ -5,12 +5,16 @@ git https://git-scm.com/download
 golang https://golang.google.cn/dl/
 npm https://nodejs.org/en/download
 `
+spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 web.code.publish source
-spark `执行 <code>etc/miss.sh</code> 脚本，会自动下载所需要的依赖，并编译项目。`
-spark `启动服务进程。`
-shell `ish_miss_serve`
-spark `结束服务进程。`
-shell `exit`
+spark `
+下载成功后，会自动编译并启动服务进程，并会启动一个可交互的 shell。
+既可以在命令行中，通过命令的方式，使用 Contexts 提供的所有软件工具，
+也可以在浏览器中，通过网页的方式，使用所有的软件工具。
+`
+spark `在启动的 shell 中执行命令，输入命令 <kdb>exit<kdb>，并输入回车键，即可退出服务进程。`
+spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd>Ctrl+\\</kdb> 退出进程。`
+spark `再次启动服务进程，输入命令 ./bin/ice.bin 即可。`
 
 chapter "项目组成"
 spark `Contexts 前后端框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会被干掉，最终不依赖于任何外部项目，做到完全自举。`

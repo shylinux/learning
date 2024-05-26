@@ -8,22 +8,12 @@ navmenu `
   "手动下载" manual.shy
   "源码编译" source.shy
 
-"使用方式" interfaces/
-  "命令式" cli.shy
-  "网页式" web.shy
-
 "基础功能" using/
-  "编辑器" vimer.shy
-  "代码库" repos.shy
-  "收藏夹" favor.shy
-  "任务计划" plan.shy
-  "笔记文档" note.shy
-  "官方网站" site.shy
-
-"高级特性" feature/
   "应用桌面" desktop.shy
   "工作空间" space.shy
   "应用商店" store.shy
+
+"高级特性" feature/
   "网络服务" spide.shy
   "服务发现" broad.shy
   "组建集群" cluster.shy
