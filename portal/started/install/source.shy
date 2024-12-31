@@ -24,8 +24,9 @@ spark `Contexts 主要由以下几个项目组成。`
 order `
 前端框架 https://shylinux.com/x/volcanos
 后端框架 https://shylinux.com/x/icebergs
-脚本库 https://shylinux.com/x/intshell
 工具库 https://shylinux.com/x/toolkits
+脚本库 https://shylinux.com/x/intshell
+文档库 https://shylinux.com/x/learning
 图标库 https://shylinux.com/x/icons
 打包库 https://shylinux.com/x/ice
 `
@@ -33,13 +34,13 @@ order `
 section "外部依赖"
 spark `Contexts 后端只依赖三个外部库。`
 order `
-https://shylinux.com/x/websocket
-https://shylinux.com/x/go-qrcode
 https://shylinux.com/x/go-git
+https://shylinux.com/x/go-qrcode
+https://shylinux.com/x/websocket
 `
 spark `Contexts 前端只使用了三个外部库。`
 order `
 bootstrap-icons
-html2canvas
+layui
 xterm
 `

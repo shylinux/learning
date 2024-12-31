@@ -1,0 +1,3 @@
+title "管理后台"
+spark `ContextOS 云操作系统，内置了很多软件工具，所有的软件工具都可以像管理后台一样，通过网页界面的方式来使用。`
+web.wiki.iframe "https://demo.shylinux.com/#profile:desktop:desktop:tabview"
