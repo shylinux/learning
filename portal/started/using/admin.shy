@@ -1,3 +1,15 @@
 title "管理后台"
 spark `ContextOS 云操作系统，内置了很多软件工具，所有的软件工具都可以像管理后台一样，通过网页界面的方式来使用。`
-web.wiki.iframe "https://demo.shylinux.com/#profile:desktop:desktop:tabview"
+web.wiki.iframe "https://demo.shylinux.com/#project:studio:vimer:tabview"
+spark `管理后台，界面分为标题栏、导航栏、工作区、状态栏。`
+
+chapter "系统界面"
+section "标题栏"
+section "导航栏"
+section "工作区"
+section "状态栏"
+
+chapter "应用界面"
+section "工具栏"
+section "工作区"
+section "状态栏"

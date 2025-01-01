@@ -14,7 +14,12 @@ navmenu `
   "工作空间" space.shy
   "系统商店" store.shy
 
-"高级特性" feature/
+"组织架构" feature/
+  "镜像源" spide.shy
+  "代码源" spide.shy
+  "认证源" spide.shy
+  "数据源" spide.shy
+
   "网络服务" spide.shy
   "服务发现" broad.shy
   "组建集群" cluster.shy
