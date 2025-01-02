@@ -1,15 +1,15 @@
 title "源码编译"
-spark `如果想了解 Contexts 的源码与原理，可以直接下载项目所有源码，自己编译后再启动。编译 Contexts 需要提前安装好以下几个软件`
+spark `如果想了解 ContextOS 的源码与原理，可以直接下载项目的所有源码，编译后再启动。编译 ContextOS 需要提前安装好以下几个软件`
 refer `
 git https://git-scm.com/download
 golang https://golang.google.cn/dl/
 npm https://nodejs.org/en/download
 `
 spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
-web.code.publish source
+publish source
 spark `
 下载成功后，会自动编译并启动服务进程，并会启动一个可交互的 shell。
-既可以在命令行中，通过命令的方式，使用 Contexts 提供的所有软件工具，
+既可以在命令行中，通过命令的方式，使用所有的软件工具，
 也可以在浏览器中，通过网页的方式，使用所有的软件工具。
 `
 spark `在启动的 shell 中执行命令，输入命令 <kdb>exit<kdb>，并输入回车键，即可退出服务进程。`
@@ -17,10 +17,10 @@ spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd
 spark `再次启动服务进程，输入命令 ./bin/ice.bin 即可。`
 
 chapter "项目组成"
-spark `Contexts 前后端框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会被干掉，最终不依赖于任何外部项目，做到完全自举。`
+spark `ContextOS 前后端的框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会自研替代，最终不依赖于任何外部项目，做到完全自举。`
 
 section "核心项目"
-spark `Contexts 主要由以下几个项目组成。`
+spark `ContextOS 主要由以下几个项目组成。`
 order `
 前端框架 https://shylinux.com/x/volcanos
 后端框架 https://shylinux.com/x/icebergs
@@ -32,15 +32,14 @@ order `
 `
 
 section "外部依赖"
-spark `Contexts 后端只依赖三个外部库。`
+spark `ContextOS 后端只依赖三个外部库。`
 order `
 https://shylinux.com/x/go-git
 https://shylinux.com/x/go-qrcode
 https://shylinux.com/x/websocket
 `
-spark `Contexts 前端只使用了三个外部库。`
+spark `ContextOS 前端只使用了两个外部库。`
 order `
 bootstrap-icons
-layui
 xterm
 `

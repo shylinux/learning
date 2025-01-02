@@ -3,6 +3,18 @@ navmenu `
 	"创建项目" project.shy
 	"创建模块" module.shy
 
+"组织架构" feature/
+  "镜像源" spide.shy
+  "代码源" spide.shy
+  "认证源" spide.shy
+  "数据源" spide.shy
+
+  "网络服务" spide.shy
+  "服务发现" broad.shy
+  "组建集群" cluster.shy
+  "服务编排" matrix.shy
+  "自动化" script.shy
+
 "框架原理" contexts/
 	"后端框架" icebergs/
 		"启动流程" boot.shy

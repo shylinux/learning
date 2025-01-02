@@ -1,10 +1,10 @@
 title "手动下载"
 spark `如果有其它需要，例如下载其它系统或其它架构的可执行文件，可手动下载。如下使用 curl 或 wget 命令，下载所需的 bin 文件。`
-web.code.publish manual
+publish manual
 spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download">Git-Bash</a>，在 Git-Bash 的命令行中执行操作。`
 
 spark `本服务器已经编译好的程序文件如下表`
-web.code.publish version
+publish version
 
 spark `添加执行权限，并重命名文件。`
 shell linux `

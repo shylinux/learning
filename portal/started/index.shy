@@ -14,19 +14,18 @@ navmenu `
   "工作空间" space.shy
   "系统商店" store.shy
 
-"组织架构" feature/
-  "镜像源" spide.shy
-  "代码源" spide.shy
-  "认证源" spide.shy
-  "数据源" spide.shy
+"在线办公" office/
+  "收藏夹" favor.shy
+  "日历" plan.shy
+  "绘图" draw.shy
+  "笔记" note.shy
+  "官网" site.shy
 
-  "网络服务" spide.shy
-  "服务发现" broad.shy
-  "组建集群" cluster.shy
-  "服务编排" matrix.shy
-  "自动化" script.shy
+"在线研发" studio/
+  "编辑器" vimer.shy
+  "代码库" repos.shy
 
-"权限管理" auth/
+"用户权限" auth/
   "共享链" share.shy
   "令牌桶" token.shy
   "邮箱" email.shy
@@ -35,7 +34,7 @@ navmenu `
   "用户" user.shy
   "登录" auth.shy
 
-"应用管理" managing/
+"系统管理" managing/
   "目录结构" dir.shy
   "启动配置" init.shy
   "启动参数" boot.shy
