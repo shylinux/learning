@@ -1,28 +1,26 @@
 title "启动参数"
-spark `Contexts 在命令行终端中，有三种使用方式，命令式、交互式、守护式。`
+spark `ContextOS 在命令行终端中，有三种使用方式，命令式、交互式、守护式。`
 
 chapter `命令式`
 spark `命令式用来执行一次性命令`
 shell `./bin/ice.bin tcp.host` with echo
 
 chapter `交互式`
-spark `交互式，会启动一个常驻功能和一个交互shell，可以多次执行命令。`
+spark `交互式，会启动一个常驻功能和一个交互 shell，可以多次执行命令。`
 
 section `启动服务`
-shell `./bin/ice.bin serve start dev "" port 9030 nodename demo`
+shell `./bin/ice.bin serve start dev "" nodename demo port 9030`
 spark `serve 启动服务的参数如下`
 order `
 dev 指定上级服务节点。
-proto 指定服务启动的协议 http 或 https
-host 指定服务启动时绑定的本机 IP 地址
-port 指定服务启动的端口号，默认 9020
-nodename 指定本机节点名
+nodename 指定本节点名
 username 指定根用户名
 usernick 指定根用户的昵称
+port 指定服务端口
 `
 
 section `启动空间`
-shell `./bin/ice.bin space dial dev "http://localhost:9020" name demo`
+shell `./bin/ice.bin space dial dev "http://localhost:9020"`
 order `
 dev 指定服务节点。
 name 指定空间名。
@@ -36,4 +34,4 @@ section `启动服务`
 shell `./bin/ice.bin forever start serve`
 
 section `启动空间`
-shell `./bin/ice.bin forever start space dev "http://localhost:9020"`
+shell `./bin/ice.bin forever start space`

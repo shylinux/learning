@@ -1,8 +1,7 @@
 title "编辑器"
-spark `作为一个功能完备的工具系统，编辑器当然是必不少的工具。
-web.code.vimer 就是 Contexts 自带的编辑器，具有语法高亮、语法模板、语法补全、语法跳转等功能。
-web.code.vimer 也是一个编辑器框架，默认已经支持 Contexts 用到的语言 Golang、Javascript、HTML、CSS、sh、shy 等，
-如需其它语言，直接添加语法模块即可。Contexts 中所有的工具，都可以被当成插件，在编辑器中直接使用。`
+brief `ContextOS 云操作系统，提供了编辑器，有语法高亮、语法模板、语法补全、语法跳转等功能。
+web.code.vimer 也是一个编辑器框架，默认已经支持 ContextOS 用到的语言 Golang、Javascript、HTML、CSS、sh、shy 等，
+如需其它语言，直接添加语法模块即可。ContextOS 中所有的工具，都可以被当成插件，在编辑器中直接使用。`
 spark demo vimer
 
 chapter "工具界面"

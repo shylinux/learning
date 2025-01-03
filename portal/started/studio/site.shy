@@ -1,5 +1,5 @@
 title "官方网站"
-spark `Contexts 的官方网站，web.wiki.portal 就是用文档驱动的，使用 .shy 的文件格式，都保存在 ./src/document/ 目录下。`
+spark `ContextOS 的官方网站，web.liki.portal 就是用文档驱动的，使用 .shy 的文件格式，都保存在 ./src/document/ 与 ./usr/learning/portal/ 目录下。`
 
 chapter "目录与文件"
 spark `在 ./src/document/ 目录下，有两个特别的文件。一个是 ./src/document/index.shy 用来生成标题栏。另外就是各个子目录下的 index.shy 用来生成导航栏。`

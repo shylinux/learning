@@ -1,7 +1,6 @@
 title "代码库与代码源"
-spark `Contexts 为了实现功能的完备，代码库和代码源当然是必不可少的功能。其中代码库是指 Git-Client，代码源是指 Git-Server。`
-spark `Contexts 在服务节点启动时，默认的就已经启动了 Git-Server 的服务，支持代码源的创建、上传、下载等功能。
-所以 Contexts 的所有代码，都是存放在 Contexts 启动的服务器上。如前端框架 <a>https://shylinux.com/x/volcanos.git</a>，后端框架 <a>https://shylinux.com/x/icebergs.git</a>。`
+brief `ContextOS 为了实现自给自足，也集成了代码库和代码源的功能。其中代码库是指 Git-Client，代码源是指 Git-Server。`
+spark demo web.code.git.status
 
 chapter "代码源管理"
 spark demo web.code.git.service
