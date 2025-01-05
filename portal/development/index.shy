@@ -16,43 +16,6 @@ navmenu `
 	"应用桌面" desktop.shy
 	"微信公众号" official.shy
 
-"相关技术" technology/
+"相关技术" tech/
 	"开发工具" content.shy
-`
-return
-navmenu `
-"功能开发" create/
-	"创建项目" project.shy
-	"创建模块" module.shy
-
-"组织架构" feature/
-  "镜像源" spide.shy
-  "代码源" spide.shy
-  "认证源" spide.shy
-  "数据源" spide.shy
-
-  "网络服务" spide.shy
-  "服务发现" broad.shy
-  "组建集群" cluster.shy
-  "服务编排" matrix.shy
-  "自动化" script.shy
-
-"框架原理" contexts/
-	"后端框架" icebergs/
-		"启动流程" boot.shy
-		"模块注册" merge.shy
-		"事件消息" event.shy
-		"远程调用" space.shy
-	"前端框架" volcanos/
-		"加载流程" boot.shy
-		"模块注册" merge.shy
-		"事件消息" event.shy
-		"请求数据" space.shy
-
-"框架接口" interface/
-	"后端框架" icebergs/
-		ice ice.shy
-		Context ctx.shy
-		Message msg.shy
-	"前端框架" volcanos/
 `
