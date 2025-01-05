@@ -1,4 +1,26 @@
 navmenu `
+"序言" preface/
+	"总体流程" tech.shy
+
+"搭建组织架构" cluster/
+	"需求分析" custom.shy
+	"部署集群" deploy.shy
+
+"开发功能模块" module/
+	"需求分析" custom.shy
+	"创建模块" module.shy
+
+"配置应用场景" action/
+	"官网首页" portal.shy
+	"管理后台" admin.shy
+	"应用桌面" desktop.shy
+	"微信公众号" official.shy
+
+"相关技术" technology/
+	"开发工具" content.shy
+`
+return
+navmenu `
 "功能开发" create/
 	"创建项目" project.shy
 	"创建模块" module.shy
@@ -33,6 +55,4 @@ navmenu `
 		Context ctx.shy
 		Message msg.shy
 	"前端框架" volcanos/
-"相关技术" technology/
-	"开发工具" content.shy
 `

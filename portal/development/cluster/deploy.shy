@@ -1,0 +1,56 @@
+title "部署集群"
+brief `ContextOS 云操作系统，首先部署根节点服务器，然后再部署子节点服务器，
+所有子节点服务器还可以再不断的部署新的子节点服务器，从而无穷无尽的递归下去，就可以生成任意复杂的组织架构。`
+
+chapter "部署根节点服务器"
+spark `根节点服务器，作为整个组织架构的根节点，将会作为代码源、镜像源、配置源、认证源、数据源，
+为整个组织架构提供统一的服务，从而实现完全私有化的部署，不依赖于任何外部环境，完全自给自足、自主进化。`
+spark `根节点服务器的部署流程为：下载安装、配置域名与代理、登录管理后台、创建根项目、创建子项目。`
+
+section "下载安装"
+spark `复制如下命令，在终端命令行中执行一下，即可一键下载 ContextOS 并启动服务进程。`
+publish binary
+
+section "配置域名与代理"
+spark `为了方便访问与创建项目，可以配置域名与反向代理。`
+spark `
+ContextOS 在启动服务进程后，会自动生成 nginx 的配置文件，
+并保存在 ./usr/local/daemon/10000/conf/portal/ 目录下，将此目录添加到 nginx 的配置中即可。
+`
+
+section "登录管理后台"
+spark `根据域名和代理的配置，在浏览器中打开管理后台，并登录系统，即可使用网页界面操作后续的流程。`
+
+section "创建根项目"
+spark `
+如下图所示，使用软件工具「status(源代码)」初始化代码库，在对话框中，通过参数「远程库」指定代码库的远程地址。
+ContextOS 服务进程启动后，已经启动了 Git-Server 服务，远程库可以指定根节点服务器的地址，
+例如地址 https://2028-contextos.shylinux.com/x/2028-ContextOS
+`
+image material serve-status-init.png
+spark `
+代码库初始化成功后，会自动生成必要的文件，如 LICENSE、README.md、Makefile 等。
+生成后的文件，可以自行修改，然后提交并上传代码，根项目创建成功。
+`
+spark `如下图所示，使用软件工具「status(源代码)」提交并上传代码。`
+image material status-commit.png
+
+# spark `如下图所示，使用软件工具「xterm(终端)」执行命令「source etc/miss.sh」进行编译构建。`
+# image material xterm-source.png
+
+section "创建子项目"
+spark `如下图所示，使用软件工具「dream(梦想家)」创建子项目。`
+image material dream-create.png
+
+spark `如下图所示，在新项目的卡片底部，点击「更多 - 打开」即可在新的网页中，打开新项目的管理后台。`
+image material dream-open.png
+
+spark `同创建根项目一样，在子项目的管理后台中，依次初始化代码库、提交并上传代码。`
+
+section "发布子项目"
+spark `子项目创建成功后，如果需要部署到子节点上，需要构建发布。`
+spark `如下图所示，使用软件工具「compile(构建)」，编译后即可得到下载命令，复制此命令，在子设备上，执行即可下载安装。`
+image material compile-build.png
+
+chapter "部署子节点服务器"
+spark `子节点服务器的部署流程，同根节点服务器的部署基本相同。只是子节点的下载命令，是从根节点的子项目发布后获得。`
