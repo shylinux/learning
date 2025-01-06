@@ -35,9 +35,6 @@ spark `
 spark `如下图所示，使用软件工具「status(源代码)」提交并上传代码。`
 image material status-commit.png
 
-# spark `如下图所示，使用软件工具「xterm(终端)」执行命令「source etc/miss.sh」进行编译构建。`
-# image material xterm-source.png
-
 section "创建子项目"
 spark `如下图所示，使用软件工具「dream(梦想家)」创建子项目。`
 image material dream-create.png
@@ -54,3 +51,7 @@ image material compile-build.png
 
 chapter "部署子节点服务器"
 spark `子节点服务器的部署流程，同根节点服务器的部署基本相同。只是子节点的下载命令，是从根节点的子项目发布后获得。`
+spark `
+子节点服务器启动后，会自动连接根节点服务器，从而实现统一的管理与调度。
+另外，当登录子节点服务器时，可以直接跳转到根节点服务器获取用户信息，从而实现单点登录。
+`
