@@ -1,0 +1,35 @@
+chapter "原型库"
+section "can.Conf(key, value)"
+order `
+can.Conf() 返回所有配置。
+can.Conf(key) 返回某个配置。
+can.Conf(key, value) 设置某个配置。
+can.Conf(obj) 设置多个配置。
+`
+
+section "can.ConfDefault(obj)"
+spark `设置配置的默认值。`
+
+section "can.ConfHeight()"
+spark `返回模块界面的高度。`
+
+section "can.ConfWidth()"
+spark `返回模块界面的宽度。`
+
+section "can.ConfSpace()"
+spark `返回模块后端的节点。`
+
+section "can.ConfIndex()"
+spark `返回模块后端的索引。`
+
+section "can.Mode(value)"
+spark `读写模块的模式。`
+
+section "can.require(libs, cb, cbs)"
+spark `加载一个模块文件。`
+
+section "can.request(event)"
+spark `创建一个新的消息数据。`
+
+section "can.isCmdMode()"
+spark `是否为命令的模式。`

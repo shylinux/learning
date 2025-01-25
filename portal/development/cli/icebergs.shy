@@ -1,0 +1,22 @@
+title "后端标准模块"
+brief `后端冰山架，提供了一些标准化的模块，可以直接使用。`
+
+chapter "基础模块"
+section "用户管理 aaa.user"
+section "用户会话 aaa.sess"
+section "运行环境 cli.runtime"
+
+section "系统服务 web.serve"
+section "网络通信 web.space"
+section "项目空间 web.dream"
+section "应用商店 web.store"
+
+chapter "核心模块"
+section "编辑器 web.code.vimer"
+section "编译器 web.code.compile"
+section "笔记文档 web.wiki.word"
+section "官网首页 web.wiki.portal"
+section "应用桌面 web.chat.macos.desktop"
+
+chapter "外部模块"
+section "代码库 web.code.git.status"

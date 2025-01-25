@@ -1,0 +1,34 @@
+chapter "界面操作"
+section "can.Option(key, val)"
+order `
+can.Option() 返回选项栏中所有字段的值。
+can.Option(key) 返回选项栏中某个字段的值。
+can.Option(key, val) 设置选项栏中某个字段的值。
+can.Option(obj) 设置选项栏中多个字段的值。
+`
+section "can.Action(key, val)"
+order `
+can.Action() 返回工具栏中所有字段的值。
+can.Action(key) 返回工具栏中某个字段的值。
+can.Action(key, val) 设置工具栏中某个字段的值。
+can.Action(obj) 设置工具栏中多个字段的值。
+`
+section "can.Status(key, val)"
+order `
+can.Status(key) 返回状态栏中某个字段的值。
+can.Status(key, val) 设置状态栏中某个字段的值。
+can.Status(obj) 设置状态栏中多个字段的值。
+`
+section "can.Update(event, cmds, cb)"
+order `
+can.Update() 请求数据，并刷新界面。
+can.Update(event) 请求数据，并刷新界面，指定事件参数 <code>event</code>。
+can.Update(event, cmds) 请求数据，并刷新界面，指定事件参数 <code>event</code> 与执行的命令参数 <code>cmds</code>。
+can.Update(event, cmds, cb) 请求数据，但不刷新界面，指定事件参数 <code>event</code> 与执行的命令参数 <code>cmds</code>，返回的数据交给参数 <code>cb</code> 去处理。
+`
+spark `参数都是可选的，完整的参数如下所示：`
+spark inner `
+can.Update(event, ["action", "show"], function(msg) {
+	msg.Dump(can)
+})
+` file demo.js

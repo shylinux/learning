@@ -1,0 +1,57 @@
+chapter "数据类型 can.base"
+section "can.base.Time(time, fmt)"
+spark "返回格式化的时间"
+section "can.base.TimeTrim(value)"
+spark "返回短格式的时间"
+section "can.base.trimPrefix(str, pre)"
+spark "去除字符串前缀。"
+section "can.base.trimSuffix(str, end, once)"
+spark "去除字符串后缀。"
+
+chapter "数据结构 can.core"
+section "can.core.List(list, cb, interval, cbs)"
+spark `遍历数组。`
+section "can.core.Item(obj, cb)"
+spark `遍历对象。`
+section "can.core.Next(list, cb, cbs, data)"
+spark `异步方式遍历数组。`
+section "can.core.Timer(interval, cb, cbs)"
+spark `定时回调。`
+section "can.core.Split(str)"
+spark `分词。`
+section "can.core.Value(data, key, value)"
+spark `读写结构化数据。`
+section "can.core.Keys(key1, key2)"
+spark `拼接键值。`
+
+chapter "通信协议 can.misc"
+section "can.misc.Cookie(can, key, value, path)"
+spark `读写 Cookie 参数。`
+section "can.misc.Search(can, key, value)"
+spark `读写 URL 参数。`
+section "can.misc.Log()"
+spark `输出日志。`
+
+chapter "网页界面 can.page"
+section "can.page.Append(can, target, key, value)"
+spark `追加界面元素。`
+section "can.page.Remove(can, target)"
+spark "删除界面元素。"
+section "can.page.Cache(can, output, data)"
+spark "缓存界面元素。"
+
+chapter "用户信息 can.user"
+section "can.user.info"
+spark `用户信息`
+order `
+can.user.info.email 用户邮箱。
+can.user.info.avatar 用户头像。
+can.user.info.language 用户语言。
+can.user.info.userrole 用户角色。
+can.user.info.username 用户账号。
+can.user.info.usernick 用户昵称。
+can.user.info.nodetype 节点类型。
+can.user.info.nodename 节点名称。
+`
+section "can.user.toast(can, content, title, duration, progress, hash)"
+spark "提示消息。"

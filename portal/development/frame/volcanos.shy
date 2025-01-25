@@ -1,0 +1,37 @@
+title "前端框架解析"
+brief `前端火山架，是完全自研框架，只使用浏览器提供的最基础接口，不依赖于任何第三方库。`
+field "架构图" web.code.git.spides args `volcanos`
+
+chapter "框架库"
+section "原型库 proto.js"
+section "框架库 frame.js"
+section "常量库 const.js"
+section "样式库 index.css"
+
+chapter "基础库 lib/"
+section "数据类型 base.js"
+section "数据结构 core.js"
+section "通信协议 misc.js"
+section "界面操作 page.js"
+section "用户信息 user.js"
+
+chapter "打包库 page/"
+section "打包脚本 cache.js"
+section "打包样式 cache.css"
+
+chapter "面板库 panel/"
+section "标题栏 header.js"
+section "状态栏 footer.js"
+section "导航栏 river.js"
+section "工作区 action.js"
+section "搜索栏 search.js"
+
+chapter "模块库 plugin/"
+section "模块基类 state.js"
+section "输入基类 input.js"
+section "输出基类 table.js"
+section "输入库 input/"
+section "输出库 story/"
+section "后端库 local/"
+
+chapter "发布库 publish/"

@@ -1,0 +1,50 @@
+chapter "接口分类"
+spark `前端模块所有的接口都会自动注册到参数 <code>can</code> 中，直接调用即可。`
+section "界面元素"
+spark `模块的界面是完全标准化的，只有工作区 <code>can._output</code>，是每个模块自行定义的输出内容，其它的界面元素都是框架自动添加的内容。`
+order `
+can._fields 模块界面
+can._legend 标题栏
+can._option 选项栏
+can._action 工具栏
+can._output 工作区
+can._status 状态栏
+can._target 工作区
+`
+section "界面操作"
+spark `为了方便的操作界面，框架封装了几个常用的接口。`
+order `
+can.Option() 读写选项栏中的参数。
+can.Action() 读写工具栏中的参数。
+can.Status() 读写状态栏中的参数。
+can.Update() 请求数据，刷新界面。
+`
+section "框架库"
+spark `前端框架，会将一些全局的接口注册到模块上，每个模块可以直接调用，也可以自行重写每个接口。`
+order `
+can.onimport 导入数据
+can.onaction 用户操作
+can.onexport 导出数据
+can.onengine 框架引擎
+can.ondaemon 消息推送
+can.onappend 界面操作
+can.onlayout 界面布局
+can.onmotion 界面动效
+can.onkeymap 键盘操作
+can.oninputs 键盘输入
+`
+section "标准库"
+spark `为了降低代码的重复率，一些常用的代码功能，也被封装到标准库里，直接调用即可。`
+order `
+can.base 数据类型
+can.core 数据结构
+can.misc 通信协议
+can.page 网页界面
+can.user 用户信息
+`
+section "自定义"
+spark `为了规范接口定义，降低命名冲突，每个模块自定义的接口，可以使用 <code>can.db</code> 来存放后台数据，使用 <code>can.ui</code> 存放界面元素。`
+order `
+can.db 后台数据
+can.ui 界面元素
+`

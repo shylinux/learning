@@ -1,0 +1,4 @@
+title "前端标准接口"
+brief `前端火山架，前端所有的功能都是模块化的，通过函数 <code>Volcanos()</code> 向前端框架注册模块。前端模块的基本结构如下所示：`
+spark inner demo.js
+spark `其中，<code>_init()</code> 是模块加载时的回调函数，<code>layout()</code> 是界面重绘时的回调函数。参数 <code>can</code> 代表功能模块，参数 <code>msg</code> 代表数据消息。`

@@ -1,0 +1,34 @@
+chapter "框架引擎 can.onengine"
+section "can.onengine.plugin(can, name, command)"
+spark "注册一个前端模块。"
+section "can.onengine.listen(can, name, cb, target)"
+spark "监听一个事件。"
+section "can.onengine.signal(can, name, msg)"
+spark "触发一个事件。"
+
+chapter "消息推送 can.ondaemon"
+section "can.ondaemon.rich(can, msg, sub, arg)"
+spark "追加结构化数据。"
+section "can.ondaemon.grow(can, msg, sub, arg)"
+spark "追加文本化数据。"
+
+chapter "界面操作 can.onappend"
+section "can.onappend.table(can, msg, cb, target, keys)"
+spark "将结构化数据展示到界面。"
+section "can.onappend.board(can, text, target)"
+spark "将文本化数据展示到界面。"
+section "can.onappend.layout(can, list, type, target)"
+spark "添加布局元素。"
+section "can.onappend.plugin(can, meta, cb, target, field)"
+spark "添加模块插件。"
+
+chapter "界面布局 can.onlayout"
+
+chapter "界面动效 can.onmotion"
+section "can.onmotion.cache(can, next)"
+spark `缓存界面元素。`
+section "can.onmotion.delay(can, cb, interval, key)"
+spark `延时函数。`
+
+chapter "键盘操作 can.onkeymap"
+chapter "键盘输入 can.oninputs"

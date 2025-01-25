@@ -1,0 +1,7 @@
+title "终端标准接口"
+brief `终端神农架，终端所有功能都是模块化的。终端模块的基本结构如下所示：`
+spark inner demo.sh
+
+chapter "模块管理"
+section "加载模块 require"
+section "请求数据 request"

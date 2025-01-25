@@ -16,9 +16,6 @@ ContextOS 编译后只有 20M 大小，支持所有主流的操作系统与所�
 chapter "开发功能模块"
 spark `ContextOS 云操作系统，所有的功能都是模块化开发，并且自带开发环境，可以随时随地的编程，快速创建出新的功能模块。`
 spark `ContextOS 云操作系统，终端神农架使用 Shell 编程，后端冰山架使用 Golang 编程，前端火山架使用 JS+CSS 编程。`
-field "火山架" web.code.git.spides args `volcanos`
-field "冰山架" web.code.git.spides args `icebergs`
-field "神农架" web.code.git.spides args `intshell`
 
 chapter "配置应用场景"
 spark `ContextOS 云操作系统，研发了内存版的数据库，提供了强大的存储与配置的能力。

@@ -1,0 +1,24 @@
+title "后端标准接口"
+brief `后端冰山架，后端所有功能都是模块化的，通过函数 ice.Cmd() 向后端框架注册模块。后端模块的基本结构如下所示：`
+spark inner demo.go
+
+chapter "输入参数"
+section "读写选项参数 m.Option()"
+section "读写模块配置 m.Config()"
+
+chapter "执行命令"
+section "m.Cmd()"
+section "m.Cmdy()"
+
+chapter "处理数据"
+section "m.Table()"
+section "m.RewriteAppend()"
+section "m.RenameAppend()"
+
+chapter "输出数据"
+section "结构化数据 m.Push()"
+section "文本化数据 m.Echo()"
+
+chapter "输出脚本"
+section "前端脚本 m.Display()"
+section "前端样式 m.DisplayCSS()"

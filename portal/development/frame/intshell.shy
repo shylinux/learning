@@ -1,0 +1,21 @@
+title "终端框架解析"
+brief `终端神农架，是完全自研框架，只使用命令行提供的最基础命令，不依赖于任何第三方库。`
+field "架构图" web.code.git.spides args `intshell`
+
+chapter "框架库"
+section "插件库 plug.sh"
+section "配置库 conf.sh"
+section "样式库 show.sh"
+section "项目管理 miss.sh"
+section "终端管理 index.sh"
+
+chapter "系统库 sys/"
+section "命令行 cli/"
+section "浏览器 web/"
+
+chapter "开发库 dev/"
+section "终端分屏 tmux/"
+section "代码库 git/"
+section "编辑器 vim/"
+
+chapter "应用库 app/"

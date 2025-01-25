@@ -1,0 +1,77 @@
+chapter "数据消息"
+spark `前后端通信、设备间通信、模块间通信都使用统一的通信协议。数据消息的格式如下所示：`
+spark inner `
+{
+	"detail": ["space"],
+	"option": ["user.name", "user.web"],
+	"user.name": ["shy"],
+	"user.web": ["https://shylinux.com/c/admin"],
+	"type": ["worker", "origin"],
+	"name": ["20230511-linux-story", "dev"],
+	"append": ["type", "name"],
+	"result": ["hello world"]
+}
+`
+spark `其中标准化的字段如下所示：`
+order `
+detail 请求行，存放了请求的命令与参数。
+option 请求头，字段内容是字段列表，索引其它字段，存放了请求或响应的选项参数。
+append 响应头，字段内容是字段列表，索引出了一个二维的数据表，存放了返回的结构化的数据。
+result 响应体，存放了返回的文本化的数据。
+`
+spark `如上所示的数据消息，执行的模块命令为 <code>space</code>.，附带的选项参数如下所示：`
+table `
+字段名 数据值
+user.name shy
+user.web https://shylinux.com/c/admin
+`
+spark `并返了一个结构化的数据，内容如下所示：`
+table `
+type name
+worker 20230511-linux-story
+origin dev
+`
+spark `并返了一个文本化的数据，内容如下所示：`
+spark inner `hello world`
+
+section "msg.Option(key, val)"
+spark `读写数据消息中的选项参数。`
+order `
+msg.Option() 返回选项的字段列表。
+msg.Option(key) 返回某个选项的参数值。
+msg.Option(key, val) 设置某个选项的参数值。
+msg.Option(obj) 设置多个选项的参数值。
+`
+
+section "msg.Append(key, val)"
+spark `读写数据消息中的结构化的数据。`
+order `
+msg.Append() 返回结构化数据的字段列表。
+msg.Append(key) 返回结构化数据的某个字段的值。
+msg.Append(key, val) 设置结构化数据的某个字段的值。
+msg.Append(obj) 设置结构化数据的多个字段的值。
+`
+
+section "msg.Result()"
+spark `返回文本化数据的内容。`
+
+section "msg.Length()"
+spark `返回结构化数据的行数。`
+
+section "msg.Table(cb)"
+spark `遍历结构化数据的内容，使用方式如下：`
+spark inner `
+msg.Table(function(value) {
+	console.log(value.name)
+	console.log(value.type)
+})
+` file demo.js
+
+section "msg.Push(key, val)"
+spark `向结构化的数据添加一个字段。`
+
+section "msg.Echo(text)"
+spark `向文本化的数据添加一个字符串。`
+
+section "msg.Dump()"
+spark `将结构化的数据以表格的形式展示到界面上，将文本化的数据以 <code>HTML</code> 的形式展示到界面上。`

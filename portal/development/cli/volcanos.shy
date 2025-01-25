@@ -1,0 +1,17 @@
+title "前端标准模块"
+brief `前端火山架，提供了一些标准化的模块，可以直接使用。`
+
+chapter "数据存储"
+section "can.cookie"
+section "can.localStorage"
+section "can.sessionStorage"
+
+chapter "用户信息"
+section "can.title"
+section "can.theme"
+section "can.language"
+
+chapter "系统信息"
+section "can.data"
+section "can.view"
+section "can.runtime"
