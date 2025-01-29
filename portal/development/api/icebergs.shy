@@ -3,8 +3,18 @@ brief `后端冰山架，后端所有功能都是模块化的，通过函数 ice
 spark inner demo.go
 
 chapter "输入参数"
-section "读写选项参数 m.Option()"
-section "读写模块配置 m.Config()"
+section "m.Option()"
+spark `读写数据消息的选项参数。`
+order `
+m.Option(key) 返回某个选项参数的值。
+m.Option(key, value) 设置某个选项参数的值。
+`
+section "m.Config()"
+spark `读写模块的配置参数。`
+order `
+m.Config(key) 返回某个配置参数的值。
+m.Config(key, value) 设置某个配置参数的值。
+`
 
 chapter "执行命令"
 section "m.Cmd()"
@@ -15,7 +25,20 @@ section "m.Table()"
 section "m.RewriteAppend()"
 section "m.RenameAppend()"
 
+chapter "事件管理"
+section "m.Event()"
+spark `触发事件。`
+section "m.WaitEvent()"
+spark `等待事件。`
+
+chapter "模板管理"
+section "m.Template()"
+spark `渲染模板。`
+
 chapter "输出数据"
+section "m.Action()"
+spark `设置工具栏控件。`
+
 section "结构化数据 m.Push()"
 section "文本化数据 m.Echo()"
 

@@ -3,6 +3,9 @@ brief `
 ContextOS 云操作系统，自带完整的开发环境。
 所以当组织架构搭建好之后，就可以在任意节点的任意项目中，直接现场开发，创建出新的功能模块。
 `
+spark `
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113859348138151&bvid=BV1WZw2eqEh9&cid=27972734444&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+`
 
 chapter "后端开发"
 spark `ContextOS 后端使用 Golang 开发，并且自带后端冰山架，所以直接添加模块文件即可。`

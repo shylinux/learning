@@ -1,1 +1,57 @@
-title "官网首页"
+title "官网文档"
+brief `ContextOS 定义了自己的文档文件与目录，并提供了丰富的文档命令，可以使用很简单的文本就能渲染出来很复杂的界面。`
+spark `访问地址 <a>http://localhost:9020/c/portal</a> 即可打开官网文档。其中主机地址需要替换成自己的主机与端口。`
+image material portal.png
+spark `如上图所示，官网首页默认会显示项目名称、目标口号、功能简介、项目源码、安装命令等。`
+
+chapter "项目简介"
+spark `每个项目的简介保存在文件 <code>src/document/content.shy</code>，内容如下所示：`
+spark inner src/document/content.shy
+spark `<code>spark project</code> 命令，第一个参数为目标口号，第二个参数为项目简介，可自行修改。`
+spark `<code>spark product</code> 命令，展示产品列表。打开应用 <code>web.product</code> 进行配置，如下图标所示：`
+image material product.png
+spark `如上图所示，即可添加或删除需要展示的软件产品，启用的产品会显示到官网首页，从而让用户更好的了解本项目提供了哪些软件产品。`
+
+chapter "官网菜单"
+spark `标题栏的内容保存在文件 <code>src/document/index.shy</code>，内容如下所示：`
+spark inner src/document/index.shy
+spark `<code>navmenu</code> 命令，输出标题栏的内容，参数是多行的文本，每一行代表一个菜单项，第一列是要显示的文本，第二列是文件的目录。`
+spark `当用户点击菜单后，ContextOS 首先会查找 <code>src/document/</code> 目录，然后再查找 <code>usr/learning/portal/</code> 目录。
+例如这里的下载菜单，目录为 <code>download/</code>，当用户点击下载菜单后，ContextOS 会读取文件 <code>usr/learning/portal/download/content.shy</code> 的内容。
+如需重新定义下载文档，可以添加文件 <code>src/document/download/content.shy</code> 自行定义文档内容。
+`
+
+chapter "文档菜单"
+spark `ContextOS 的文档都保存在目录 <code>usr/learning/portal/</code>，每个子目录，都有一个索引文件 <code>index.shy</code>，用来定义文档左边栏的菜单。
+例如开发文档的菜单 <code>usr/learning/portal/development/index.shy</code> 内容如下所示：
+`
+spark inner usr/learning/portal/development/index.shy
+spark `<code>navmenu</code> 命令，参数为多行文本。
+每一行即是一个菜单项，通过 <code>Tab</code> 缩进来代表菜单层级，第一个字段定义菜单显示的文本，第二个字段代表目录或文件。
+其中第二个字段目录或文件，会继承所有上级菜单的目录，全部拼接到一起去磁盘查找文件。
+`
+
+chapter "文档内容"
+spark `例如本文档的源码保存在文件 <code>usr/learning/portal/development/action/portal.shy</code>，内容如下所示：`
+spark inner usr/learning/portal/development/action/portal.shy
+spark `ContextOS 文档格式为 <code>shy</code>，常用的命令如下所示：`
+order `
+title 文档标题。
+brief 文档摘要。
+chapter 一级标题。
+section 二级标题。
+image 图片内容。
+spark 文本内容。
+order 列表内容。
+table 表格内容。
+`
+spark `其中 <code>spark</code> 命令，又有多个子命令，如下所示：`
+order `
+spark inner 读取文件，以源代码的形式展示出来。
+spark project 输出项目信息。
+spark product 输出产品列表。
+`
+spark `其中 <code>image</code> 命令，又有多个子命令，如下所示：`
+order `
+image material 展示素材目录中的图片。
+`

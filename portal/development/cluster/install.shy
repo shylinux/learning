@@ -1,1 +1,9 @@
-chapter "%s"
+title "安装项目"
+brief `ContextOS 云操作系统，提供了去中心化的应用商店，任何安装了 ContextOS 的设备，都可以作为代码源与镜像源，直接下载所有公开的项目。`
+image material install.png
+
+chapter "添加商店"
+spark `点击工具栏中 + 号，打开添加对话框，然后输入主机地址即可添加。`
+
+chapter "安装项目"
+spark `选择左边栏的中的商店，选择右边栏中需要安装的项目，点击安装，打开安装对话框，输入安装的项目名即可安装。`

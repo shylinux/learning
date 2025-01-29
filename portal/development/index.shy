@@ -4,16 +4,17 @@ navmenu `
 "搭建组织架构" cluster/
 	"需求分析" custom.shy
 	"部署集群" deploy.shy
+	"安装项目" install.shy
 "开发功能模块" module/
 	"需求分析" custom.shy
 	"创建模块" module.shy
+	"数据消息" message.shy
 "配置应用场景" action/
-	"官网首页" portal.shy
+	"需求分析" custom.shy
+	"官网文档" portal.shy
 	"应用桌面" desktop.shy
 	"管理后台" admin.shy
-	"笔记文档" word.shy
 	"微信公众号" official.shy
-
 "框架标准接口" api/
 	"前端标准接口" volcanos/
 		"标准接口" index.shy
@@ -33,7 +34,6 @@ navmenu `
 	"前端框架解析" volcanos.shy
 	"后端框架解析" icebergs.shy
 	"终端框架解析" intshell.shy
-
 "相关技术" tech/
 	"开发工具" content.shy
 `

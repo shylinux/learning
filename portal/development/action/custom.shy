@@ -1,0 +1,38 @@
+title "需求分析"
+brief `ContextOS 提供了各种场景化的入口，如官网文档、应用桌面、管理后台、微信公众号等，用户可以根据自己的使用需求，选择自己合适的入口进行配置与使用。`
+
+chapter "项目配置"
+
+section "项目标题"
+spark `ContextOS 在启动时，会读取文件 <code>src/main.shy</code>，将 <code>title</code> 命令的参数作为项目标题，保存在 <code>ice.Info.Titles</code>。`
+
+section "项目图标"
+spark `ContextOS 在启动时，会依次检测如下文件，如果文件存在，则作为项目图标保存在 <code>ice.Info.NodeIcon</code>。`
+order `
+src/main.png
+src/main.jpg
+src/main.ico
+`
+
+section "项目首页"
+spark `在 <code>src/main.go</code> 文件中，可以进行一些项目配置，如下设置图标与首页。`
+spark inner `
+package main
+
+import "shylinux.com/x/ice"
+
+func main() { print(ice.Run()) }
+
+func init() {
+	ice.Info.NodeIcon = "src/client/redis.png"
+	ice.Info.NodeMain = "web.code.redis.studio"
+}
+`
+spark `
+常用的配置有
+`
+order `
+ice.Info.NodeIcon 设置项目图标。
+ice.Info.NodeMain 设置项目首页。
+`
+
