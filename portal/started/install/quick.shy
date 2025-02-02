@@ -1,27 +1,22 @@
 title "快速下载"
+brief `ContextOS 使用 Golang 开发，支持交叉编译，所以在各种操作系统上，都只需要一个可执行的程序文件，直接下载执行即可。`
+
 chapter "下载安装"
-spark `ContextOS 使用 Golang 开发，支持交叉编译，所以在各种操作系统上，都只需要一个可执行的程序文件，直接下载执行即可。`
 spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 publish binary
 spark `此命令会自动选择下载命令 curl 或 wget，并自动识别出操作系统与处理器的类型，下载所需的可执行程序文件，最后自动启动服务进程。`
 spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download/win">Git-Bash</a>，在 Git-Bash 的命令行中执行操作。`
 
 chapter "使用方式"
-spark `
-下载成功后，会自动启动服务进程，并会启动一个可交互的 shell。
-既可以在命令行中，通过命令的方式，使用所有的软件工具，
-也可以在浏览器中，通过网页的方式，使用所有的软件工具。
-`
+spark `ContextOS 下载成功后，会自动启动服务进程，并会启动一个可交互的 Shell，既可以在命令行中，通过命令的方式，使用所有的软件工具，也可以在浏览器中，通过网页的方式，使用所有的软件工具。`
 
 section "命令交互"
-spark `在启动的 shell 中执行命令，输入命令 <kdb>exit<kdb>，并输入回车键，即可退出服务进程。`
+spark `在启动的 shell 中执行命令，输入命令 <code>exit</code>，并输入回车键，即可退出服务进程。`
 spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd>Ctrl+\\</kdb> 退出进程。`
-spark `再次启动服务进程，输入命令 ./bin/ice.bin 即可。`
+spark `再次启动服务进程，输入命令 <code>./bin/ice.bin</code> 即可。`
 
 section "网页交互"
-spark `
-服务启动后，会自动启动网页服务，打开 <a>http://localhost:9020</a> 即可访问网页管理后台。
-`
+spark `服务启动后，会自动启动网页服务，打开 <a>http://localhost:9020</a> 即可访问网页管理后台。`
 
 section "终端命令"
 spark `ContextOS 也支持在命令行终端中执行一次性命令。`
@@ -30,16 +25,18 @@ shell `./bin/ice.bin tcp.host`
 spark `执行本机系统命令，pwd 查看当前路径。`
 shell `./bin/ice.bin cli.system pwd`
 
-section "目录结构"
+chapter "目录结构"
 spark `下载成功后，ContextOS 会以当前目录为工作空间，相关的数据与文件也只会保存在当前目录。`
 order `
 ./bin/ice.bin 程序文件
 ./var/conf/ 配置目录
 ./var/data/ 数据目录
 ./var/log/ 日志目录
+./var/log/bench.log 所有日志
+./var/log/ice.port 服务进程的端口
+./var/log/ice.pid 服务进程的 PID
 `
-spark `其中 ./bin/ice.bin 就是下载的程序文件，直接运行即可使用。其它的文件，都是在程序运行时生成的文件。`
-spark `
-ContextOS 可以创建任意多个工作空间，为了保证每个工作空间的完整性与独立性，每个工作空间下都会保存运行所需的所有文件。
-所以并不需要将 ice.bin 文件放到全局的 PATH 中，在当前工作空间的目录中，完成所有操作。
+spark `其中 <code>./bin/ice.bin</code> 就是下载的程序文件，直接运行即可使用。其它的文件，都是在程序运行时生成的文件。`
+spark `ContextOS 可以创建任意多个工作空间，为了保证每个工作空间的完整性与独立性，每个工作空间下都会保存运行所需的所有文件。
+所以并不需要将 <code>./bin/ice.bin</code> 文件放到全局的 PATH 中，在当前工作空间的目录中，完成所有操作。
 `

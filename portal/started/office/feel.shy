@@ -1,3 +1,23 @@
 title "相册"
-brief `ContextOS 云操作系统，提供了相册的功能。`
-spark demo feel
+brief `ContextOS 云操作系统，为了方便的管理图片与视频，提供了相册的功能。`
+image material feel.png
+
+chapter "相册管理"
+spark `ContextOS 的默认的相册有以下几个。`
+order `
+usr/icons/ 图标库，存放系统通用的应用图标。
+usr/cover/ 封面库，存放视频的封面。
+usr/avatar/ 头像库，存放用户的头像。
+usr/image/ 图片库，存放公开的图片。
+usr/local/image/ 私有库，存放私有的图片。
+`
+section "创建相册"
+spark `点击工具栏中的 <i class="bi bi-folder-plus"></i>，打开对话框，输入参数路径、名称、封面，即可创建相册。`
+
+chapter "图片管理"
+section "上传"
+spark `点击工具栏中的 <i class="bi bi-box-arrow-in-up"></i>，选择需要上传的文件即可。`
+section "截图"
+spark `点击工具栏中的 <i class="bi bi-images"></i>，即可截图并上传。`
+section "录屏"
+spark `点击工具栏中的 <i class="bi bi-record-circle"></i>，即可录屏并上传。`

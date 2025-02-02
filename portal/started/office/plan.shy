@@ -1,3 +1,16 @@
 title "日历"
-brief `ContextOS 云操作系统，提供了日历的功能。`
-spark demo plan
+brief `ContextOS 云操作系统，为了方便的管理时间与计划，提供了计划表的功能。`
+image material plan.png
+
+chapter "事件"
+section "创建事件"
+spark `点击工具栏中的 + 号，输入参数分类、名称、详情、时间等，即可创建一个新事件。`
+video material plan-create.mov
+
+chapter "待办"
+spark `ContextOS 还提供了待办。`
+image material todo.png
+
+chapter "史记"
+spark `ContextOS 还提供了史记。`
+image material epic.png

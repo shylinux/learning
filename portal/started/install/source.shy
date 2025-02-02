@@ -1,5 +1,5 @@
 title "源码编译"
-spark `如果想了解 ContextOS 的源码与原理，可以直接下载项目的所有源码，编译后再启动。编译 ContextOS 需要提前安装好以下几个软件`
+brief `如果想了解 ContextOS 的源码与原理，可以直接下载项目的所有源码，编译后再启动。编译 ContextOS 需要提前安装好以下几个软件`
 refer `
 git https://git-scm.com/download
 golang https://golang.google.cn/dl/

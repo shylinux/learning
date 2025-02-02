@@ -1,5 +1,5 @@
 title "手动下载"
-spark `如果有其它需要，例如下载其它系统或其它架构的可执行文件，可手动下载。如下使用 curl 或 wget 命令，下载所需的 bin 文件。`
+brief `如果有其它需要，例如下载其它系统或其它架构的可执行文件，可手动下载。如下使用 curl 或 wget 命令，下载所需的 bin 文件。`
 publish manual
 spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download">Git-Bash</a>，在 Git-Bash 的命令行中执行操作。`
 
@@ -18,10 +18,6 @@ chmod u+x ice.windows.amd64
 mkdir bin; mv ice.windows.amd64 bin/ice.bin
 `
 spark `启动服务进程。`
-shell `
-./bin/ice.bin
-`
+shell `./bin/ice.bin`
 spark `退出服务进程。`
-shell `
-exit
-`
+shell `exit`
