@@ -8,8 +8,10 @@ navmenu `
 	"安装项目" install.shy
 "开发功能模块" module/
 	"需求分析" custom.shy
-	"创建模块" module.shy
-	"数据消息" message.shy
+	"创建模块" create.shy
+	"网页界面" webview.shy
+	"通信协议" message.shy
+	"数据存储" storage.shy
 "配置应用场景" action/
 	"需求分析" custom.shy
 	"官网文档" portal.shy

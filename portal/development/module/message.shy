@@ -1,15 +1,27 @@
-title "数据消息"
+title "通信协议"
 brief `无论是前后端通信、模块间通信、设备间通信，都使用统一的通信协议。`
-spark `如下所示，后端接口的第一个参数为 <code>m *ice.Message</code>，保存了数据消息，并封装了相关的接口。`
+
+spark `如下所示，后端接口的第一个参数为 <code>m *ice.Message</code>，保存了数据消息，并封装了相关的方法。`
 spark inner `
 func (s hi) List(m *ice.Message, arg ...string) {
+	...
 }
 ` file demo.go
-spark `如下所示，前端接口的第二个参数为 <code>msg</code>，保存了数据消息，并封装了相关的接口。`
+
+spark `如下所示，前端接口的第二个参数为 <code>msg</code>，保存了数据消息，并封装了相关的方法。`
 spark inner `
 _init: function(can, msg) {
+	...
 }
 ` file demo.js
-chapter "基础协议"
 
+chapter "后端方法"
+section "m.Option()"
+section "m.Push()"
+section "m.Echo()"
+section "m.Action()"
+section "m.Display()"
+section "m.DisplayCSS()"
+
+chapter "前端方法"
 section "msg.Option()"

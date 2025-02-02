@@ -1,25 +1,18 @@
 title "创建模块"
-brief `
-ContextOS 云操作系统，自带完整的开发环境。
-所以当组织架构搭建好之后，就可以在任意节点的任意项目中，直接现场开发，创建出新的功能模块。
-`
-spark `
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113859348138151&bvid=BV1WZw2eqEh9&cid=27972734444&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-`
+brief `ContextOS 云操作系统，自带完整的开发环境。所以当组织架构搭建好之后，就可以在任意设备的任意项目中，直接现场开发，创建出新的功能模块。`
 
 chapter "后端开发"
 spark `ContextOS 后端使用 Golang 开发，并且自带后端冰山架，所以直接添加模块文件即可。`
 
 section "创建模块"
 spark `如下图所示，使用软件工具「vimer(编辑器)」创建新的功能模块。
-其中名称与分类，需要自行输入，这将决定生成模块的文件与目录。
-每个参数的意义如下所示。`
+其中名称与分类，需要自行输入，这将决定生成模块的文件与目录。每个参数的意义如下所示：`
 order `
-名称，模块的名称及文件的名称。
+名称，模块的名称与文件的名称。
 帮助，模块的中文名称。
 类型，模块的基类。
 程序，主程序入口。
-分类，模块的分类及目录的名称。
+分类，模块的分类与目录的名称。
 顶域，模块的名称前缀。
 `
 image material vimer-module.png
@@ -54,7 +47,6 @@ order `
 `
 spark `工具区，每个模块自行定义输出内容，默认会显示通用表格。`
 spark `状态栏，显示一些状态信息，如响应时间、数据数量、请求耗时等。`
-
 
 section "添加接口"
 spark `如下图所示，给模块添加接口，编写完代码后，依次保存、编译、预览即可。`

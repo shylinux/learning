@@ -1,0 +1,24 @@
+title "数据存储"
+brief `ContextOS 实现了一种内存版的数据库 ice.Hash。`
+spark inner `
+package hi
+
+import "shylinux.com/x/ice"
+
+type hi struct {
+	ice.Hash
+	...
+}
+
+func (s hi) List(m *ice.Message, arg ...string) {
+	...
+}
+
+func init() { ice.Cmd("web.chat.hi.hi", hi{}) }
+
+` file demo.go
+
+spark `如上代码所示，通过匿名嵌套 ice.Hash，模块 hi 就继承了数据存储的相关功能与接口。`
+
+chapter "内存结构"
+chapter "读写操作"
