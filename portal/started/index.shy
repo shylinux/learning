@@ -5,6 +5,7 @@ navmenu `
 "下载安装" install/
   "快速下载" quick.shy
   "手动下载" manual.shy
+  "直接下载" windows.shy
   "源码编译" source.shy
 "基础功能" using/
   "管理后台" admin.shy
