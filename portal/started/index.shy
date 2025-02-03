@@ -1,7 +1,7 @@
 navmenu `
 "关于" about/
-  "项目" introduction.shy
-  "授权" license.shy
+  "项目特点" introduction.shy
+  "开源协议" license.shy
 "下载安装" install/
   "快速下载" quick.shy
   "手动下载" manual.shy

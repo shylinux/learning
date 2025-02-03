@@ -4,19 +4,18 @@ brief `ContextOS 使用 Golang 开发，支持交叉编译，所以在各种操�
 chapter "下载安装"
 spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 publish binary
-spark `此命令会自动选择下载命令 curl 或 wget，并自动识别出操作系统与处理器的类型，下载所需的可执行程序文件，最后自动启动服务进程。`
+spark `此命令会自动选择下载命令 curl 或 wget，并自动识别出操作系统与芯片架构的类型，下载所需的可执行程序文件，最后自动启动服务进程。`
 spark `在 Windows 系统上，可以下载 <a href="https://git-scm.com/download/win">Git-Bash</a>，在 Git-Bash 的命令行中执行操作。`
 
 chapter "使用方式"
-spark `ContextOS 下载成功后，会自动启动服务进程，并会启动一个可交互的 Shell，既可以在命令行中，通过命令的方式，使用所有的软件工具，也可以在浏览器中，通过网页的方式，使用所有的软件工具。`
-
-section "命令交互"
-spark `在启动的 shell 中执行命令，输入命令 <code>exit</code>，并输入回车键，即可退出服务进程。`
-spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd>Ctrl+\\</kdb> 退出进程。`
-spark `再次启动服务进程，输入命令 <code>./bin/ice.bin</code> 即可。`
+spark `ContextOS 下载成功后，会自动启动服务进程，并会启动一个可交互的 Shell 与一个 WEB 的服务器。既可以在命令行中，通过命令的方式，使用所有的软件工具，也可以在浏览器中，通过网页的方式，使用所有的软件工具。`
 
 section "网页交互"
-spark `服务启动后，会自动启动网页服务，打开 <a>http://localhost:9020</a> 即可访问网页管理后台。`
+spark `服务启动后，会自动启动网页服务，打开 <a>http://localhost:9020/c/admin?debug=true</a> 即可访问管理后台。`
+
+section "命令交互"
+spark `在启动的 shell 中执行命令，输入命令 <code>exit</code>，并输入回车键，即可退出服务进程。再次启动服务进程，输入命令 <code>./bin/ice.bin</code> 即可。`
+spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd>Ctrl+\\</kdb> 退出进程。`
 
 section "终端命令"
 spark `ContextOS 也支持在命令行终端中执行一次性命令。`

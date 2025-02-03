@@ -1,4 +1,4 @@
-title "ContextOS"
+title "项目特点"
 brief `ContextOS 云操作系统，既要完全自给自足，又要任意互联互通。`
 order `
 ContextOS 只有 20M 大小，集成了编辑器、编译器、前端构架、后端构架、代码库、数据库等几百种工具。

@@ -7,14 +7,16 @@ npm https://nodejs.org/en/download
 `
 spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 publish source
-spark `
-下载成功后，会自动编译并启动服务进程，并会启动一个可交互的 shell。
-既可以在命令行中，通过命令的方式，使用所有的软件工具，
-也可以在浏览器中，通过网页的方式，使用所有的软件工具。
-`
-spark `在启动的 shell 中执行命令，输入命令 <kdb>exit<kdb>，并输入回车键，即可退出服务进程。`
+
+chapter "使用方式"
+spark `ContextOS 下载成功后，会自动启动服务进程，并会启动一个可交互的 Shell 与一个 WEB 的服务器。既可以在命令行中，通过命令的方式，使用所有的软件工具，也可以在浏览器中，通过网页的方式，使用所有的软件工具。`
+
+section "网页交互"
+spark `服务启动后，会自动启动网页服务，打开 <a>http://localhost:9020/c/admin?debug=true</a> 即可访问管理后台。`
+
+section "命令交互"
+spark `在启动的 shell 中执行命令，输入命令 <code>exit</code>，并输入回车键，即可退出服务进程。再次启动服务进程，输入命令 <code>./bin/ice.bin</code> 即可。`
 spark `也可以通过信号控制进程，<kbd>Ctrl+C</kbd> 重启进程，<kbd>Ctrl+\\</kdb> 退出进程。`
-spark `再次启动服务进程，输入命令 ./bin/ice.bin 即可。`
 
 chapter "项目组成"
 spark `ContextOS 前后端的框架和核心模块全部自研，只有少部分功能使用到了外部代码，并且随时会自研替代，最终不依赖于任何外部项目，做到完全自举。`
@@ -27,6 +29,7 @@ order `
 工具库 https://shylinux.com/x/toolkits
 脚本库 https://shylinux.com/x/intshell
 文档库 https://shylinux.com/x/learning
+素材库 https://shylinux.com/x/material
 图标库 https://shylinux.com/x/icons
 打包库 https://shylinux.com/x/ice
 `

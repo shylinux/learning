@@ -17,6 +17,7 @@ mkdir bin; mv ice.darwin.amd64 bin/ice.bin
 chmod u+x ice.windows.amd64
 mkdir bin; mv ice.windows.amd64 bin/ice.bin
 `
+
 spark `启动服务进程。`
 shell `./bin/ice.bin`
 spark `退出服务进程。`
