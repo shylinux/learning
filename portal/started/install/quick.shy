@@ -2,6 +2,7 @@ title "快速下载"
 brief `ContextOS 使用 Golang 开发，支持交叉编译，所以在各种操作系统上，都只需要一个可执行的程序文件，直接下载执行即可。`
 
 chapter "下载安装"
+video material binary.mov
 spark `为了方便下载并快速启动，可以使用如下命令。点击下面的命令，即可直接复制，然后打开命令行终端，执行一下即可。`
 publish binary
 spark `此命令会自动选择下载命令 curl 或 wget，并自动识别出操作系统与芯片架构的类型，下载所需的可执行程序文件，最后自动启动服务进程。`
@@ -39,3 +40,7 @@ spark `其中 <code>./bin/ice.bin</code> 就是下载的程序文件，直接运
 spark `ContextOS 可以创建任意多个工作空间，为了保证每个工作空间的完整性与独立性，每个工作空间下都会保存运行所需的所有文件。
 所以并不需要将 <code>./bin/ice.bin</code> 文件放到全局的 PATH 中，在当前工作空间的目录中，完成所有操作。
 `
+
+chapter "远程安装"
+spark `如果是在服务器或是虚拟机中安装 ContextOS，访问管理后台时需要登录，复制登录界面上的命令，在启动的命令行终端里，执行一下即可授权登录。`
+video material binary-login.mov
