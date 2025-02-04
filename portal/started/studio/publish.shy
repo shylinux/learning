@@ -1,0 +1,10 @@
+title "软件包与软件源"
+brief `软件包提供了软件下载的工具，软件源提供了软件托管的工具。`
+
+chapter "软件包"
+spark `如下图所示，在左边栏选择服务器，在右边栏就可以展示软件包列表。选择需要软件包，点击下载即可。`
+image material publish-client.png
+
+chapter "软件源"
+spark `如下图所示，点击工具栏中的 + 号，即可创建新的软件包。`
+image material publish-server.png
