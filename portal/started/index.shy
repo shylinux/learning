@@ -1,35 +1,35 @@
 navmenu `
 "关于" about/
-  "项目特点" introduction.shy
-  "开源协议" license.shy
+	"项目特点" introduction.shy
+	"开源协议" license.shy
 "下载安装" install/
-  "快速下载" quick.shy
-  "手动下载" manual.shy
-  "直接下载" windows.shy
-  "源码编译" source.shy
+	"快速下载" quick.shy
+	"手动下载" manual.shy
+	"直接下载" windows.shy
+	"源码编译" source.shy
 "基础功能" using/
-  "管理后台" admin.shy
-  "应用桌面" desktop.shy
-  "工作空间" dream.shy
-  "系统商店" store.shy
+	"管理后台" admin.shy
+	"应用桌面" desktop.shy
+	"工作空间" dream.shy
+	"系统商店" store.shy
 "在线办公" office/
-  "相册" feel.shy
-  "日历" plan.shy
+	"相册" feel.shy
+	"日历" plan.shy
 "在线研发" studio/
-  "编辑器" vimer.shy
-  "代码库" repos.shy
-  "收藏夹" favor.shy
-  "笔记文档" note.shy
-  "官方网站" site.shy
+	"编辑器" vimer.shy
+	"代码库" repos.shy
+	"收藏夹" favor.shy
+	"笔记文档" note.shy
+	"官方网站" site.shy
 "用户权限" auth/
-  "登录" auth.shy
-  "用户" user.shy
-  "角色" role.shy
-  "会话" sess.shy
-  "分享" share.shy
+	"登录" auth.shy
+	"用户" user.shy
+	"角色" role.shy
+	"会话" sess.shy
+	"分享" share.shy
 "系统管理" managing/
-  "目录结构" dir.shy
-  "环境变量" env.shy
-  "启动参数" boot.shy
-  "进程信号" signal.shy
+	"目录结构" dir.shy
+	"环境变量" env.shy
+	"启动参数" boot.shy
+	"进程信号" signal.shy
 `
